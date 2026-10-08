@@ -15,6 +15,9 @@ ROS, flight or learning integration has already been reproduced in this reposito
 Figure 4.3 in the manuscript uses an EGO-Planner-v2 video frame from
 `swarm-playground/main_ws/WatchMe_main.mp4` at 160 s, and an Agile Autonomy animation
 frame from `planner_learning/img/animation_medium.gif` at zero-based index 37.
+The manuscript arranges these full frames side by side, with EGO-Planner-v2 on
+the left and Agile Autonomy on the right. Their English headings and legends
+remain editable in the locally generated SVG.
 The code repository references those original project media rather than packaging
 the frames or composite image. The figure driver skips Figure 4.3 if the two
 locally supplied source frames are absent.

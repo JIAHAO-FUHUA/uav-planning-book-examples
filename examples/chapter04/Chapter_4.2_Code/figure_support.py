@@ -65,17 +65,33 @@ def architecture():
     save(fig,'fig_4_1_architecture')
 
 def source_demonstrations():
-    fig=plt.figure(figsize=(9.2,11.4))
-    settings=[(.96,.93,.50,.490,'(a) EGO-Planner-v2: simulated trajectories among obstacles',
-        'ego_frame_160s.png','Legend: colored curves = planned trajectories; vertical shapes = obstacles'),
-        (.444,.42,.025,.012,'(b) Agile Autonomy: learned flight around a tree',
-        'agile_frame_37.png','Legend: repeated red UAVs = successive positions; tree = obstacle')]
-    for title_y,top,bottom,legend_y,title,file,legend in settings:
-        fig.text(.5,title_y,title,ha='center',va='center',fontsize=18,fontweight='bold')
-        ax=fig.add_axes([.005,bottom,.99,top-bottom])
-        ax.imshow(Image.open(ROOT/'source_frames'/file));ax.axis('off')
-        fig.text(.5,legend_y,legend,ha='center',va='top',fontsize=17)
-    save(fig,'fig_4_3_demonstrations')
+    # Preserve the two full source frames and their aspect ratios.
+    fig = plt.figure(figsize=(11.6, 4.7))
+    layout = fig.add_gridspec(
+        3, 2, height_ratios=[.55, 3.12, .62],
+        left=.01, right=.99, bottom=.01, top=.99,
+        hspace=.04, wspace=.05)
+    panels = [
+        ('(a) EGO-Planner-v2\nSimulated trajectories among obstacles',
+         'ego_frame_160s.png',
+         'Legend: colored curves = planned trajectories;\nvertical shapes = obstacles'),
+        ('(b) Agile Autonomy\nLearned flight around a tree',
+         'agile_frame_37.png',
+         'Legend: repeated red UAVs = successive positions;\ntree = obstacle')]
+    for column, (title, filename, legend) in enumerate(panels):
+        title_ax = fig.add_subplot(layout[0, column])
+        title_ax.axis('off')
+        title_ax.text(.5, .5, title, ha='center', va='center',
+                      fontsize=22, fontweight='bold', linespacing=1.05)
+        picture_ax = fig.add_subplot(layout[1, column])
+        with Image.open(ROOT / 'source_frames' / filename) as frame:
+            picture_ax.imshow(frame.copy(), aspect='equal')
+        picture_ax.axis('off')
+        legend_ax = fig.add_subplot(layout[2, column])
+        legend_ax.axis('off')
+        legend_ax.text(.5, .5, legend, ha='center', va='center',
+                       fontsize=20, linespacing=1.1)
+    save(fig, 'fig_4_3_demonstrations')
 
 if __name__=='__main__':
     configure_fonts();architecture();source_demonstrations()
