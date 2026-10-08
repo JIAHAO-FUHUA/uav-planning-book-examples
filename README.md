@@ -2,6 +2,8 @@
 
 [中文说明](README_ZH.md)
 
+For the IET book maintainer: [Chapter 4 integration and update commands](docs/integration.md).
+
 Python and C++ examples accompanying the UAV planning chapter. The first set covers
 Sections **4.2.1–4.2.8** and **4.3.1–4.3.2**, including grid search, incremental
 replanning, sampling, motion primitives and polynomial trajectories.
