@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="734.4pt" height="234pt" viewBox="0 0 734.4 234" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T12:10:26.555886</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 234 
+L 734.4 234 
+L 734.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 88.676659 142.562727 
+L 146.822114 142.562727 
+L 146.822114 84.417273 
+" clip-path="url(#p82e2ccac55)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #979fa6; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 88.676659 142.562727 
+L 146.822114 142.562727 
+L 146.822114 84.417273 
+" clip-path="url(#p82e2ccac55)" style="fill: none; stroke: #1966a4; stroke-width: 2.6; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 18px; font-family: 'Times New Roman'; text-anchor: start" x="91.874659" y="150.703091" transform="rotate(-0 91.874659 150.703091)">S</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 18px; font-family: 'Times New Roman'; text-anchor: start" x="150.020114" y="150.703091" transform="rotate(-0 150.020114 150.703091)">W</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 18px; font-family: 'Times New Roman'; text-anchor: start" x="150.020114" y="92.557636" transform="rotate(-0 150.020114 92.557636)">T</text>
+   </g>
+   <g id="patch_2">
+    <path d="M 125.566231 142.562727 
+Q 133.739336 142.562727 139.452767 142.562727 
+" style="fill: none; stroke: #168051; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 131.852767 138.762727 
+L 139.452767 142.562727 
+L 131.852767 146.362727 
+" style="fill: none; stroke: #168051; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 146.822114 137.076563 
+Q 146.822114 128.465855 146.822114 122.314821 
+" style="fill: none; stroke: #168051; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 143.022114 129.914821 
+L 146.822114 122.314821 
+L 150.622114 129.914821 
+" style="fill: none; stroke: #168051; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 15px; font-family: 'Times New Roman'; text-anchor: middle; fill: #bd3c3c" x="122.110296" y="160.006364" transform="rotate(-0 122.110296 160.006364)">Velocity direction jumps</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'Times New Roman'; text-anchor: middle" x="122.110296" y="52.52" transform="rotate(-0 122.110296 52.52)">1 Constant speed</text>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m2f6119b7e2" d="M 0 2.645751 
+C 0.701661 2.645751 1.374679 2.366978 1.870829 1.870829 
+C 2.366978 1.374679 2.645751 0.701661 2.645751 0 
+C 2.645751 -0.701661 2.366978 -1.374679 1.870829 -1.870829 
+C 1.374679 -2.366978 0.701661 -2.645751 0 -2.645751 
+C -0.701661 -2.645751 -1.374679 -2.366978 -1.870829 -1.870829 
+C -2.366978 -1.374679 -2.645751 -0.701661 -2.645751 0 
+C -2.645751 0.701661 -2.366978 1.374679 -1.870829 1.870829 
+C -1.374679 2.366978 -0.701661 2.645751 0 2.645751 
+z
+" style="stroke: #000000"/>
+    </defs>
+    <g clip-path="url(#p82e2ccac55)">
+     <use xlink:href="#m2f6119b7e2" x="88.676659" y="142.562727" style="stroke: #000000"/>
+     <use xlink:href="#m2f6119b7e2" x="146.822114" y="142.562727" style="stroke: #000000"/>
+     <use xlink:href="#m2f6119b7e2" x="146.822114" y="84.417273" style="stroke: #000000"/>
+    </g>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="line2d_3">
+    <path d="M 335.602364 142.562727 
+L 393.747818 142.562727 
+L 393.747818 84.417273 
+" clip-path="url(#p23198e00cd)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #979fa6; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 335.602364 142.562727 
+L 393.747818 142.562727 
+L 393.747818 84.417273 
+" clip-path="url(#p23198e00cd)" style="fill: none; stroke: #1966a4; stroke-width: 2.6; stroke-linecap: square"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 18px; font-family: 'Times New Roman'; text-anchor: start" x="338.800364" y="150.703091" transform="rotate(-0 338.800364 150.703091)">S</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 18px; font-family: 'Times New Roman'; text-anchor: start" x="396.945818" y="150.703091" transform="rotate(-0 396.945818 150.703091)">W</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 18px; font-family: 'Times New Roman'; text-anchor: start" x="396.945818" y="92.557636" transform="rotate(-0 396.945818 92.557636)">T</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 15px; font-family: 'Times New Roman'; text-anchor: middle" x="369.036" y="160.006364" transform="rotate(-0 369.036 160.006364)">Velocity at W = 0</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 371.03404 142.562727 
+Q 376.303748 142.562727 379.113781 142.562727 
+" style="fill: none; stroke: #168051; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 371.513781 138.762727 
+L 379.113781 142.562727 
+L 371.513781 146.362727 
+" style="fill: none; stroke: #168051; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'Times New Roman'; text-anchor: middle" x="369.036" y="52.52" transform="rotate(-0 369.036 52.52)">2 Stop at W</text>
+   </g>
+   <g id="PathCollection_2">
+    <g clip-path="url(#p23198e00cd)">
+     <use xlink:href="#m2f6119b7e2" x="335.602364" y="142.562727" style="stroke: #000000"/>
+     <use xlink:href="#m2f6119b7e2" x="393.747818" y="142.562727" style="stroke: #000000"/>
+     <use xlink:href="#m2f6119b7e2" x="393.747818" y="84.417273" style="stroke: #000000"/>
+    </g>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="line2d_5">
+    <path d="M 582.528068 142.562727 
+L 640.673522 142.562727 
+L 640.673522 84.417273 
+" clip-path="url(#p193fe5f009)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #979fa6; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 582.528068 142.562727 
+L 584.284241 143.35763 
+L 588.075396 144.862334 
+L 592.613292 146.419338 
+L 597.387808 147.808478 
+L 602.087544 148.929888 
+L 606.2895 149.715688 
+L 610.219119 150.249548 
+L 614.260699 150.573509 
+L 617.831839 150.644938 
+L 621.38325 150.485588 
+L 624.374089 150.144165 
+L 627.283855 149.597841 
+L 630.083818 148.834567 
+L 632.74728 147.845498 
+L 634.845041 146.844827 
+L 636.818759 145.682466 
+L 638.657611 144.359179 
+L 640.352495 142.87765 
+L 641.896136 141.242494 
+L 643.28315 139.460238 
+L 644.51008 137.539262 
+L 645.575398 135.489714 
+L 646.479471 133.323392 
+L 647.354749 130.58849 
+L 648.008235 127.730148 
+L 648.450416 124.776148 
+L 648.694808 121.756034 
+L 648.751625 118.19006 
+L 648.590699 114.625742 
+L 648.181936 110.6178 
+L 647.497296 106.277517 
+L 646.545889 101.773597 
+L 645.383645 97.332491 
+L 643.913678 92.621402 
+L 642.253835 88.084664 
+L 640.700636 84.471579 
+L 640.673522 84.417273 
+L 640.673522 84.417273 
+" clip-path="url(#p193fe5f009)" style="fill: none; stroke: #1966a4; stroke-width: 2.6; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 18px; font-family: 'Times New Roman'; text-anchor: start" x="585.726068" y="150.703091" transform="rotate(-0 585.726068 150.703091)">S</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 18px; font-family: 'Times New Roman'; text-anchor: start" x="643.871522" y="150.703091" transform="rotate(-0 643.871522 150.703091)">W</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 18px; font-family: 'Times New Roman'; text-anchor: start" x="643.871522" y="92.557636" transform="rotate(-0 643.871522 92.557636)">T</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 631.395535 151.840715 
+Q 640.671394 142.564855 648.208001 135.028249 
+" style="fill: none; stroke: #168051; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 640.146984 137.715254 
+L 648.208001 135.028249 
+L 645.520995 143.089266 
+" style="fill: none; stroke: #168051; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 15px; font-family: 'Times New Roman'; text-anchor: middle" x="615.961704" y="160.006364" transform="rotate(-0 615.961704 160.006364)">Shared nonzero velocity</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'Times New Roman'; text-anchor: middle" x="615.961704" y="52.52" transform="rotate(-0 615.961704 52.52)">3 Smooth passage</text>
+   </g>
+   <g id="PathCollection_3">
+    <g clip-path="url(#p193fe5f009)">
+     <use xlink:href="#m2f6119b7e2" x="582.528068" y="142.562727" style="stroke: #000000"/>
+     <use xlink:href="#m2f6119b7e2" x="640.673522" y="142.562727" style="stroke: #000000"/>
+     <use xlink:href="#m2f6119b7e2" x="640.673522" y="84.417273" style="stroke: #000000"/>
+    </g>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="367.2" y="28.08" transform="rotate(-0 367.2 28.08)">Corner handling determines the boundary conditions</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 16px; font-family: 'Times New Roman'; text-anchor: middle" x="367.2" y="231.894" transform="rotate(-0 367.2 231.894)">S = start; W = mandatory waypoint; T = goal. Smooth passage keeps W but changes the curve.</text>
+  </g>
+  <g id="legend_1">
+   <g id="line2d_7">
+    <path d="M 176.081484 176.822109 
+L 193.081484 176.822109 
+L 210.081484 176.822109 
+" style="fill: none; stroke: #1966a4; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: start" x="223.681484" y="182.772109" transform="rotate(-0 223.681484 182.772109)">Timed curve</text>
+   </g>
+   <g id="line2d_8">
+    <path d="M 176.081484 200.891055 
+L 193.081484 200.891055 
+L 210.081484 200.891055 
+" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #979fa6; stroke-width: 1.5"/>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: start" x="223.681484" y="206.841055" transform="rotate(-0 223.681484 206.841055)">Geometric polyline</text>
+   </g>
+   <g id="line2d_9">
+    <path d="M 389.391641 176.822109 
+L 406.391641 176.822109 
+L 423.391641 176.822109 
+" style="fill: none; stroke: #168051; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="mbd5063ce3e" d="M 3 0 
+L -3 -3 
+L -3 3 
+z
+" style="stroke: #168051; stroke-linejoin: miter"/>
+    </defs>
+    <g>
+     <use xlink:href="#mbd5063ce3e" x="406.391641" y="176.822109" style="fill: #168051; stroke: #168051; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: start" x="436.991641" y="182.772109" transform="rotate(-0 436.991641 182.772109)">Velocity direction</text>
+   </g>
+   <g id="line2d_10">
+    <defs>
+     <path id="m02953bcf14" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #000000"/>
+    </defs>
+    <g>
+     <use xlink:href="#m02953bcf14" x="406.391641" y="200.891055" style="stroke: #000000"/>
+    </g>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: start" x="436.991641" y="206.841055" transform="rotate(-0 436.991641 206.841055)">Waypoint</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p82e2ccac55">
+   <rect x="74.140296" y="65.52" width="95.94" height="95.94"/>
+  </clipPath>
+  <clipPath id="p23198e00cd">
+   <rect x="321.066" y="65.52" width="95.94" height="95.94"/>
+  </clipPath>
+  <clipPath id="p193fe5f009">
+   <rect x="567.991704" y="65.52" width="95.94" height="95.94"/>
+  </clipPath>
+ </defs>
+</svg>

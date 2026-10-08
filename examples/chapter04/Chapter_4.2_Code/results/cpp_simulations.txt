@@ -1,0 +1,16 @@
+GRID Initial map step 0 current (4,8) remaining 40 D* 41 A* 41 status route
+GRID Close lower passage step 14 current (18,8) remaining 45.6984848098 D* 631 A* 305 status route
+GRID Reopen lower passage step 20 current (18,14) remaining 28.4852813742 D* 8 A* 30 status route
+GRID Close both passages step 23 current (21,11) remaining no_path D* 334 A* 768 status hold
+3D 3 RRT length 19.103754682 nodes 1803 first 126 rewires 0
+3D 3 RRT* length 15.4726599716 nodes 1803 first 126 rewires 1468
+3D 17 RRT length 20.9403364819 nodes 1822 first 128 rewires 0
+3D 17 RRT* length 17.36240908 nodes 1822 first 128 rewires 1741
+3D 41 RRT length 28.025522726 nodes 1753 first 313 rewires 0
+3D 41 RRT* length 17.0619632332 nodes 1753 first 313 rewires 1625
+3D 73 RRT length 21.9436078374 nodes 1743 first 292 rewires 0
+3D 73 RRT* length 15.2812936343 nodes 1743 first 292 rewires 1557
+3D 101 RRT length 21.2232449971 nodes 1821 first 178 rewires 0
+3D 101 RRT* length 16.5925535408 nodes 1821 first 178 rewires 1552
+3D low ceiling 3.4 m: no_path; budget 2000 nodes 937
+SELF_TEST passed

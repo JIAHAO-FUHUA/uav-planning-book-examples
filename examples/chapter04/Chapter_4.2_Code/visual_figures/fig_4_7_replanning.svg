@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="756pt" height="475.2pt" viewBox="0 0 756 475.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T16:13:04.743284</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 475.2 
+L 756 475.2 
+L 756 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 101.786181 175.678364 
+Q 137.233403 149.092948 169.997343 124.519993 
+" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 162.077343 125.959993 
+L 169.997343 124.519993 
+L 166.397343 131.719993 
+" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="137.232" y="139.25736" transform="rotate(-0 137.232 139.25736)">1</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 211.082181 122.509636 
+Q 246.529403 149.095052 279.293343 173.668007 
+" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 275.693343 166.468007 
+L 279.293343 173.668007 
+L 271.373343 172.228007 
+" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="246.528" y="139.25736" transform="rotate(-0 246.528 139.25736)">2</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 101.786181 204.481636 
+Q 137.233403 231.067052 171.070656 256.444992 
+" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 167.470656 249.244992 
+L 171.070656 256.444992 
+L 163.150656 255.004992 
+" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #9ca5ae" x="137.232" y="247.4604" transform="rotate(-0 137.232 247.4604)">2</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 211.082181 257.650364 
+Q 246.529403 231.064948 280.366656 205.687008 
+" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 272.446656 207.127008 
+L 280.366656 205.687008 
+L 276.766656 212.887008 
+" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #9ca5ae" x="246.528" y="247.4604" transform="rotate(-0 246.528 247.4604)">4</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="82.584" y="170.093962" transform="rotate(-0 82.584 170.093962)">g = 3</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="191.88" y="88.121962" transform="rotate(-0 191.88 88.121962)">g = 2</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="191.88" y="300.702682" transform="rotate(-0 191.88 300.702682)">g = 4</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="301.176" y="170.093962" transform="rotate(-0 301.176 170.093962)">g = 0</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Times New Roman'; text-anchor: middle" x="191.88" y="71.784" transform="rotate(-0 191.88 71.784)">(a) Before: route cost 3</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 82.584 205.92792 
+C 86.786918 205.92792 90.81826 204.258083 93.790172 201.286172 
+C 96.762083 198.31426 98.43192 194.282918 98.43192 190.08 
+C 98.43192 185.877082 96.762083 181.84574 93.790172 178.873828 
+C 90.81826 175.901917 86.786918 174.23208 82.584 174.23208 
+C 78.381082 174.23208 74.34974 175.901917 71.377828 178.873828 
+C 68.405917 181.84574 66.73608 185.877082 66.73608 190.08 
+C 66.73608 194.282918 68.405917 198.31426 71.377828 201.286172 
+C 74.34974 204.258083 78.381082 205.92792 82.584 205.92792 
+z
+" clip-path="url(#pac0abb9209)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 191.88 123.95592 
+C 196.082918 123.95592 200.11426 122.286083 203.086172 119.314172 
+C 206.058083 116.34226 207.72792 112.310918 207.72792 108.108 
+C 207.72792 103.905082 206.058083 99.87374 203.086172 96.901828 
+C 200.11426 93.929917 196.082918 92.26008 191.88 92.26008 
+C 187.677082 92.26008 183.64574 93.929917 180.673828 96.901828 
+C 177.701917 99.87374 176.03208 103.905082 176.03208 108.108 
+C 176.03208 112.310918 177.701917 116.34226 180.673828 119.314172 
+C 183.64574 122.286083 187.677082 123.95592 191.88 123.95592 
+z
+" clip-path="url(#pac0abb9209)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 191.88 287.89992 
+C 196.082918 287.89992 200.11426 286.230083 203.086172 283.258172 
+C 206.058083 280.28626 207.72792 276.254918 207.72792 272.052 
+C 207.72792 267.849082 206.058083 263.81774 203.086172 260.845828 
+C 200.11426 257.873917 196.082918 256.20408 191.88 256.20408 
+C 187.677082 256.20408 183.64574 257.873917 180.673828 260.845828 
+C 177.701917 263.81774 176.03208 267.849082 176.03208 272.052 
+C 176.03208 276.254918 177.701917 280.28626 180.673828 283.258172 
+C 183.64574 286.230083 187.677082 287.89992 191.88 287.89992 
+z
+" clip-path="url(#pac0abb9209)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 301.176 205.92792 
+C 305.378918 205.92792 309.41026 204.258083 312.382172 201.286172 
+C 315.354083 198.31426 317.02392 194.282918 317.02392 190.08 
+C 317.02392 185.877082 315.354083 181.84574 312.382172 178.873828 
+C 309.41026 175.901917 305.378918 174.23208 301.176 174.23208 
+C 296.973082 174.23208 292.94174 175.901917 289.969828 178.873828 
+C 286.997917 181.84574 285.32808 185.877082 285.32808 190.08 
+C 285.32808 194.282918 286.997917 198.31426 289.969828 201.286172 
+C 292.94174 204.258083 296.973082 205.92792 301.176 205.92792 
+z
+" clip-path="url(#pac0abb9209)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="82.584" y="195.33293" transform="rotate(-0 82.584 195.33293)">S</text>
+   </g>
+   <g id="text_11">
+    <text style="font-style: italic; font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="191.88" y="113.371672" transform="rotate(-0 191.88 113.371672)">u</text>
+   </g>
+   <g id="text_12">
+    <text style="font-style: italic; font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="191.88" y="277.315672" transform="rotate(-0 191.88 277.315672)">v</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="301.176" y="195.33293" transform="rotate(-0 301.176 195.33293)">T</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_10">
+    <path d="M 474.026181 175.678364 
+Q 509.473403 149.092948 543.310656 123.715008 
+" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 535.390656 125.155008 
+L 543.310656 123.715008 
+L 539.710656 130.915008 
+" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #9ca5ae" x="509.472" y="139.25736" transform="rotate(-0 509.472 139.25736)">1</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 583.322181 122.509636 
+Q 618.769403 149.095052 652.606656 174.472992 
+" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #c95621; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 649.006656 167.272992 
+L 652.606656 174.472992 
+L 644.686656 173.032992 
+" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #c95621; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #c95621" x="618.768" y="139.25736" transform="rotate(-0 618.768 139.25736)">∞</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 474.026181 204.481636 
+Q 509.473403 231.067052 542.237343 255.640007 
+" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 538.637343 248.440007 
+L 542.237343 255.640007 
+L 534.317343 254.200007 
+" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="509.472" y="247.4604" transform="rotate(-0 509.472 247.4604)">2</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 583.322181 257.650364 
+Q 618.769403 231.064948 651.533343 206.491993 
+" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 643.613343 207.931993 
+L 651.533343 206.491993 
+L 647.933343 213.691993 
+" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="618.768" y="247.4604" transform="rotate(-0 618.768 247.4604)">4</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="454.824" y="170.093962" transform="rotate(-0 454.824 170.093962)">g = 6</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="564.12" y="88.121962" transform="rotate(-0 564.12 88.121962)">g = ∞</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="564.12" y="300.702682" transform="rotate(-0 564.12 300.702682)">g = 4</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="673.416" y="170.093962" transform="rotate(-0 673.416 170.093962)">g = 0</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Times New Roman'; text-anchor: middle" x="564.12" y="71.784" transform="rotate(-0 564.12 71.784)">(b) Close u–T: route cost 6</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 454.824 205.92792 
+C 459.026918 205.92792 463.05826 204.258083 466.030172 201.286172 
+C 469.002083 198.31426 470.67192 194.282918 470.67192 190.08 
+C 470.67192 185.877082 469.002083 181.84574 466.030172 178.873828 
+C 463.05826 175.901917 459.026918 174.23208 454.824 174.23208 
+C 450.621082 174.23208 446.58974 175.901917 443.617828 178.873828 
+C 440.645917 181.84574 438.97608 185.877082 438.97608 190.08 
+C 438.97608 194.282918 440.645917 198.31426 443.617828 201.286172 
+C 446.58974 204.258083 450.621082 205.92792 454.824 205.92792 
+z
+" clip-path="url(#p4ca3045807)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 564.12 123.95592 
+C 568.322918 123.95592 572.35426 122.286083 575.326172 119.314172 
+C 578.298083 116.34226 579.96792 112.310918 579.96792 108.108 
+C 579.96792 103.905082 578.298083 99.87374 575.326172 96.901828 
+C 572.35426 93.929917 568.322918 92.26008 564.12 92.26008 
+C 559.917082 92.26008 555.88574 93.929917 552.913828 96.901828 
+C 549.941917 99.87374 548.27208 103.905082 548.27208 108.108 
+C 548.27208 112.310918 549.941917 116.34226 552.913828 119.314172 
+C 555.88574 122.286083 559.917082 123.95592 564.12 123.95592 
+z
+" clip-path="url(#p4ca3045807)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 564.12 287.89992 
+C 568.322918 287.89992 572.35426 286.230083 575.326172 283.258172 
+C 578.298083 280.28626 579.96792 276.254918 579.96792 272.052 
+C 579.96792 267.849082 578.298083 263.81774 575.326172 260.845828 
+C 572.35426 257.873917 568.322918 256.20408 564.12 256.20408 
+C 559.917082 256.20408 555.88574 257.873917 552.913828 260.845828 
+C 549.941917 263.81774 548.27208 267.849082 548.27208 272.052 
+C 548.27208 276.254918 549.941917 280.28626 552.913828 283.258172 
+C 555.88574 286.230083 559.917082 287.89992 564.12 287.89992 
+z
+" clip-path="url(#p4ca3045807)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 673.416 205.92792 
+C 677.618918 205.92792 681.65026 204.258083 684.622172 201.286172 
+C 687.594083 198.31426 689.26392 194.282918 689.26392 190.08 
+C 689.26392 185.877082 687.594083 181.84574 684.622172 178.873828 
+C 681.65026 175.901917 677.618918 174.23208 673.416 174.23208 
+C 669.213082 174.23208 665.18174 175.901917 662.209828 178.873828 
+C 659.237917 181.84574 657.56808 185.877082 657.56808 190.08 
+C 657.56808 194.282918 659.237917 198.31426 662.209828 201.286172 
+C 665.18174 204.258083 669.213082 205.92792 673.416 205.92792 
+z
+" clip-path="url(#p4ca3045807)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="454.824" y="195.33293" transform="rotate(-0 454.824 195.33293)">S</text>
+   </g>
+   <g id="text_24">
+    <text style="font-style: italic; font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="564.12" y="113.371672" transform="rotate(-0 564.12 113.371672)">u</text>
+   </g>
+   <g id="text_25">
+    <text style="font-style: italic; font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="564.12" y="277.315672" transform="rotate(-0 564.12 277.315672)">v</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="673.416" y="195.33293" transform="rotate(-0 673.416 195.33293)">T</text>
+   </g>
+  </g>
+  <g id="text_27">
+   <text style="font-weight: 700; font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="378" y="19.663875" transform="rotate(-0 378 19.663875)">D* Lite: invalidate old costs, then repair</text>
+  </g>
+  <g id="text_28">
+   <text style="font-size: 17px; font-family: 'Times New Roman'" transform="translate(150.751172 334.044088)">Close: u has g = 2 &lt; rhs = ∞  →  invalidate; S changes from 3 to 6.</text>
+   <text style="font-size: 17px; font-family: 'Times New Roman'" transform="translate(149.58375 357.22817)">Reopen: u has g = ∞ &gt; rhs = 2  →  accept 2; S changes from 6 to 3.</text>
+  </g>
+  <g id="text_29">
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #222b34" transform="translate(113.094727 392.615373)">g = rhs</text>
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #222b34" transform="translate(47.861719 413.617424)">Consistent: no queue entry</text>
+  </g>
+  <g id="text_30">
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #1261a0" transform="translate(355.014727 392.615373)">g &gt; rhs</text>
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #1261a0" transform="translate(308.348086 413.617424)">Cheaper: set g ← rhs</text>
+  </g>
+  <g id="text_31">
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #c95621" transform="translate(596.934727 392.615373)">g &lt; rhs</text>
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #c95621" transform="translate(513.685781 413.617424)">Obsolete: set g ← ∞, recompute</text>
+  </g>
+  <g id="text_32">
+   <text style="font-size: 15.5px; font-family: 'Times New Roman'" transform="translate(174.051484 437.629528)">Arrows = directed edges; labels = edge costs; g = stored cost to T.</text>
+   <text style="font-size: 15.5px; font-family: 'Times New Roman'" transform="translate(147.745078 454.061042)">Blue = selected route; gray = unused edge; orange dashed = blocked edge.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pac0abb9209">
+   <rect x="49.7952" y="80.784" width="284.1696" height="218.592"/>
+  </clipPath>
+  <clipPath id="p4ca3045807">
+   <rect x="422.0352" y="80.784" width="284.1696" height="218.592"/>
+  </clipPath>
+ </defs>
+</svg>

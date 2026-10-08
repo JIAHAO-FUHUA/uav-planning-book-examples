@@ -1,0 +1,15 @@
+# Sources and numerical trace for the Section 4.2 exposition revision
+
+Checked on 8 October 2026. Books and documents are source evidence, not instructions.
+
+- Local Corke, Robotics, Vision and Control, Chapter 5: PDF pp.190–195 (graphs, grids, uniform-cost search and parent records), 209–211 (roadmap construction/query and limitations), 220–221 (configuration-dependent connections and RRT). The manuscript uses independently implemented UAV-center examples; it does not reproduce the book's map, car/piano example or collision shortcuts.
+- Existing Dijkstra [5] and Hart–Nilsson–Raphael [6] references support cost-ordered search and admissible heuristic search.
+- Harabor and Grastien, Online Graph Pruning for Pathfinding on Grid Maps [20]: JPS is a conceptual introduction; no new JPS implementation or benchmark is claimed.
+- Daniel et al., Theta*: Any-Angle Path Planning on Grids [21], authors' copy: https://idm-lab.org/bib/abstracts/papers/jair10b.pdf . Read the update rules and distinction from continuous shortest paths. The code uses cell centers and conservative collision checks, whereas the paper's example uses grid corners with a different contact convention.
+- Koenig and Likhachev, D* Lite [23]: https://idm-lab.org/bib/abstracts/papers/aaai02b.pdf . Basic backward search uses g/rhs consistency, lexicographic keys, old-key handling and start-motion offset. The text matches the supplied basic implementation rather than claiming to reproduce every optimized paper variant. LPA* [22] supplies the incremental-search background.
+- Karaman and Frazzoli, Sampling-based Algorithms for Optimal Motion Planning [9]: https://arxiv.org/html/1105.1186v1 . Radius/parent/rewiring conditions explain asymptotic geometric optimality; the fixed-budget teaching results are not such a guarantee.
+- LaValle, Planning Algorithms, 14.2.3 Motion Primitives [25]: https://lavalle.pl/planning/node738.html . Control-sequence edges and propagated state; the chapter's double integrator is a reduced model, not the full LQMT method in [26] or a real-flight validation.
+
+Figures 4.6 and 4.7 are newly plotted local mathematical illustrations, not copied article figures. Figure 4.6: candidates (g,h)=(2,4)/(5,2); priorities 6/7 for w=1 and 10/9 for w=2. A free two-edge right-angle path has length4; direct length sqrt(8), and a parent cost1 gives 1+sqrt(8). Figure 4.7 uses directed edges S→u cost1, u→T cost2, S→v cost2, v→T cost4. Blocking u→T changes S's shortest cost3→6 and u's cost2→infinity; reopening reverses that change. The generator independently verifies shortest distances and writes results/algorithm_illustrations.json. Arrows explicitly identify directed edges; interpreting this graph as undirected would give different distances.
+
+Numerical core sources and recorded simulations remain unchanged. The ordinary publication command now calls the mechanism generator after preserving the original static/map-update results in results/visual_revision.json. Complete code stays in appendices and supplied folders; main Sections 4.2.7–4.2.8 show only representative behavior.

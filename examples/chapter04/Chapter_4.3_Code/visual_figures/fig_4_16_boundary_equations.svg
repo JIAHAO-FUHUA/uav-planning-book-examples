@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="734.4pt" height="288pt" viewBox="0 0 734.4 288" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T12:10:26.784656</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 288 
+L 734.4 288 
+L 734.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <!-- $p(0)=0$ -->
+    <g transform="translate(44.064 91.44)">
+     <text>
+      <tspan x="0" y="-0.421875" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">p</tspan>
+      <tspan x="10.5" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">(</tspan>
+      <tspan x="17.493164" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">0</tspan>
+      <tspan x="27.993164" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">)</tspan>
+      <tspan x="38.019434" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="52.895801" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_2">
+    <!-- $c_0=0$ -->
+    <g transform="translate(231.336 91.41416)">
+     <text>
+      <tspan x="0" y="-0.8125" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="9.320801" y="1.971875" style="font-size: 14.7px; font-family: 'Times New Roman'">0</tspan>
+      <tspan x="20.167969" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="35.044336" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="patch_2">
+    <path d="M 167.242163 86.4 
+Q 188.373693 86.4 207.492762 86.4 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 199.892762 82.6 
+L 207.492762 86.4 
+L 199.892762 90.2 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <!-- $v(0)=0$ -->
+    <g transform="translate(44.064 128.88)">
+     <text>
+      <tspan x="0" y="-0.421875" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">v</tspan>
+      <tspan x="9.320801" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">(</tspan>
+      <tspan x="16.313965" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">0</tspan>
+      <tspan x="26.813965" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">)</tspan>
+      <tspan x="36.840234" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="51.716602" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- $c_1=0$ -->
+    <g transform="translate(231.336 128.85416)">
+     <text>
+      <tspan x="0" y="-0.8125" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="9.320801" y="1.971875" style="font-size: 14.7px; font-family: 'Times New Roman'">1</tspan>
+      <tspan x="20.167969" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="35.044336" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 167.242163 123.84 
+Q 188.373693 123.84 207.492762 123.84 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 199.892762 120.04 
+L 207.492762 123.84 
+L 199.892762 127.64 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <!-- $p(1)=1$ -->
+    <g transform="translate(44.064 166.32)">
+     <text>
+      <tspan x="0" y="-0.421875" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">p</tspan>
+      <tspan x="10.5" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">(</tspan>
+      <tspan x="17.493164" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">1</tspan>
+      <tspan x="27.993164" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">)</tspan>
+      <tspan x="38.019434" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="52.895801" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_6">
+    <!-- $c_0+c_1+c_2+c_3=1$ -->
+    <g transform="translate(231.336 166.29416)">
+     <text>
+      <tspan x="0" y="-0.8125" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="35.044336" y="-0.8125" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="70.088672" y="-0.8125" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="105.133008" y="-0.8125" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="9.320801" y="1.971875" style="font-size: 14.7px; font-family: 'Times New Roman'">0</tspan>
+      <tspan x="44.365137" y="1.971875" style="font-size: 14.7px; font-family: 'Times New Roman'">1</tspan>
+      <tspan x="79.409473" y="1.971875" style="font-size: 14.7px; font-family: 'Times New Roman'">2</tspan>
+      <tspan x="114.453809" y="1.971875" style="font-size: 14.7px; font-family: 'Times New Roman'">3</tspan>
+      <tspan x="20.167969" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">+</tspan>
+      <tspan x="55.212305" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">+</tspan>
+      <tspan x="90.256641" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">+</tspan>
+      <tspan x="125.300977" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="140.177344" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="patch_4">
+    <path d="M 167.242163 161.28 
+Q 188.373693 161.28 207.492762 161.28 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 199.892762 157.48 
+L 207.492762 161.28 
+L 199.892762 165.08 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <!-- $v(1)=0$ -->
+    <g transform="translate(44.064 203.76)">
+     <text>
+      <tspan x="0" y="-0.421875" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">v</tspan>
+      <tspan x="9.320801" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">(</tspan>
+      <tspan x="16.313965" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">1</tspan>
+      <tspan x="26.813965" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">)</tspan>
+      <tspan x="36.840234" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="51.716602" y="-0.421875" style="font-size: 21px; font-family: 'Times New Roman'">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_8">
+    <!-- $c_1+2c_2+3c_3=0$ -->
+    <g transform="translate(231.336 203.73416)">
+     <text>
+      <tspan x="0" y="-0.8125" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="45.544336" y="-0.8125" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="91.088672" y="-0.8125" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="9.320801" y="1.971875" style="font-size: 14.7px; font-family: 'Times New Roman'">1</tspan>
+      <tspan x="54.865137" y="1.971875" style="font-size: 14.7px; font-family: 'Times New Roman'">2</tspan>
+      <tspan x="100.409473" y="1.971875" style="font-size: 14.7px; font-family: 'Times New Roman'">3</tspan>
+      <tspan x="20.167969" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">+</tspan>
+      <tspan x="35.044336" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">2</tspan>
+      <tspan x="65.712305" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">+</tspan>
+      <tspan x="80.588672" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">3</tspan>
+      <tspan x="111.256641" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="126.133008" y="-0.8125" style="font-size: 21px; font-family: 'Times New Roman'">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="patch_5">
+    <path d="M 167.242163 198.72 
+Q 188.373693 198.72 207.492762 198.72 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 199.892762 194.92 
+L 207.492762 198.72 
+L 199.892762 202.52 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <!-- 1 m in 1 s; local time $s=t$. -->
+    <g transform="translate(25.704 241.92)">
+     <text>
+      <tspan x="0" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">1</tspan>
+      <tspan x="8.5" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="12.75" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">m</tspan>
+      <tspan x="25.973145" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="30.223145" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">i</tspan>
+      <tspan x="34.946289" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">n</tspan>
+      <tspan x="43.446289" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="47.696289" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">1</tspan>
+      <tspan x="56.196289" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="60.446289" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">s</tspan>
+      <tspan x="67.062012" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">;</tspan>
+      <tspan x="71.785156" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="76.035156" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">l</tspan>
+      <tspan x="80.758301" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">o</tspan>
+      <tspan x="89.258301" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="96.803711" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">a</tspan>
+      <tspan x="104.349121" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">l</tspan>
+      <tspan x="109.072266" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="113.322266" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">t</tspan>
+      <tspan x="118.04541" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">i</tspan>
+      <tspan x="122.768555" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">m</tspan>
+      <tspan x="135.991699" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">e</tspan>
+      <tspan x="143.537109" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="156.858203" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="173.624121" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">.</tspan>
+      <tspan x="147.787109" y="-0.203125" style="font-style: italic; font-size: 17px; font-family: 'Times New Roman'">s</tspan>
+      <tspan x="168.900977" y="-0.203125" style="font-style: italic; font-size: 17px; font-family: 'Times New Roman'">t</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_10">
+    <!-- $p(s)=c_0+c_1s+c_2s^2+c_3s^3$ -->
+    <g transform="translate(242.352 241.92)">
+     <text>
+      <tspan x="0" y="-0.348437" style="font-style: italic; font-size: 20px; font-family: 'Times New Roman'">p</tspan>
+      <tspan x="16.660156" y="-0.348437" style="font-style: italic; font-size: 20px; font-family: 'Times New Roman'">s</tspan>
+      <tspan x="48.160156" y="-0.348437" style="font-style: italic; font-size: 20px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="81.535938" y="-0.348437" style="font-style: italic; font-size: 20px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="97.855078" y="-0.348437" style="font-style: italic; font-size: 20px; font-family: 'Times New Roman'">s</tspan>
+      <tspan x="122.694922" y="-0.348437" style="font-style: italic; font-size: 20px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="139.014062" y="-0.348437" style="font-style: italic; font-size: 20px; font-family: 'Times New Roman'">s</tspan>
+      <tspan x="172.018333" y="-0.348437" style="font-style: italic; font-size: 20px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="188.337474" y="-0.348437" style="font-style: italic; font-size: 20px; font-family: 'Times New Roman'">s</tspan>
+      <tspan x="10" y="-0.348437" style="font-size: 20px; font-family: 'Times New Roman'">(</tspan>
+      <tspan x="24.443359" y="-0.348437" style="font-size: 20px; font-family: 'Times New Roman'">)</tspan>
+      <tspan x="33.992188" y="-0.348437" style="font-size: 20px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="67.367969" y="-0.348437" style="font-size: 20px; font-family: 'Times New Roman'">+</tspan>
+      <tspan x="108.526953" y="-0.348437" style="font-size: 20px; font-family: 'Times New Roman'">+</tspan>
+      <tspan x="157.850365" y="-0.348437" style="font-size: 20px; font-family: 'Times New Roman'">+</tspan>
+      <tspan x="57.037109" y="2.304688" style="font-size: 14px; font-family: 'Times New Roman'">0</tspan>
+      <tspan x="90.412891" y="2.304688" style="font-size: 14px; font-family: 'Times New Roman'">1</tspan>
+      <tspan x="131.571875" y="2.304688" style="font-size: 14px; font-family: 'Times New Roman'">2</tspan>
+      <tspan x="147.519505" y="-6.539062" style="font-size: 14px; font-family: 'Times New Roman'">2</tspan>
+      <tspan x="180.895286" y="2.304688" style="font-size: 14px; font-family: 'Times New Roman'">3</tspan>
+      <tspan x="196.842917" y="-6.539062" style="font-size: 14px; font-family: 'Times New Roman'">3</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 475.690163 136.8 
+Q 496.821693 136.8 515.940762 136.8 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 508.340762 133 
+L 515.940762 136.8 
+L 508.340762 140.6 
+" style="fill: none; stroke: #979fa6; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <!-- $(c_0,c_1,c_2,c_3)=(0,0,3,-2)$ -->
+    <g transform="translate(518.857 67.68)">
+     <text>
+      <tspan x="0" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">(</tspan>
+      <tspan x="19.532324" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">,</tspan>
+      <tspan x="40.108887" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">,</tspan>
+      <tspan x="60.685449" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">,</tspan>
+      <tspan x="81.262012" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">)</tspan>
+      <tspan x="89.378516" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">=</tspan>
+      <tspan x="101.421289" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">(</tspan>
+      <tspan x="107.082422" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">0</tspan>
+      <tspan x="115.582422" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">,</tspan>
+      <tspan x="122.287793" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">0</tspan>
+      <tspan x="130.787793" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">,</tspan>
+      <tspan x="137.493164" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">3</tspan>
+      <tspan x="145.993164" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">,</tspan>
+      <tspan x="155.153906" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">−</tspan>
+      <tspan x="167.19668" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">2</tspan>
+      <tspan x="175.69668" y="-0.203125" style="font-size: 17px; font-family: 'Times New Roman'">)</tspan>
+      <tspan x="5.661133" y="-0.203125" style="font-style: italic; font-size: 17px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="26.237695" y="-0.203125" style="font-style: italic; font-size: 17px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="46.814258" y="-0.203125" style="font-style: italic; font-size: 17px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="67.39082" y="-0.203125" style="font-style: italic; font-size: 17px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="13.206543" y="2.051562" style="font-size: 11.9px; font-family: 'Times New Roman'">0</tspan>
+      <tspan x="33.783105" y="2.051562" style="font-size: 11.9px; font-family: 'Times New Roman'">1</tspan>
+      <tspan x="54.359668" y="2.051562" style="font-size: 11.9px; font-family: 'Times New Roman'">2</tspan>
+      <tspan x="74.93623" y="2.051562" style="font-size: 11.9px; font-family: 'Times New Roman'">3</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_12">
+    <!-- $p(s)=3s^2-2s^3$ -->
+    <g style="fill: #1966a4" transform="translate(573.726 241.92)">
+     <text>
+      <tspan x="0" y="-0.571875" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">p</tspan>
+      <tspan x="17.493164" y="-0.571875" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">s</tspan>
+      <tspan x="61.068164" y="-0.571875" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">s</tspan>
+      <tspan x="106.222031" y="-0.571875" style="font-style: italic; font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">s</tspan>
+      <tspan x="10.5" y="-0.571875" style="font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">(</tspan>
+      <tspan x="25.665527" y="-0.571875" style="font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">)</tspan>
+      <tspan x="35.691797" y="-0.571875" style="font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">=</tspan>
+      <tspan x="50.568164" y="-0.571875" style="font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">3</tspan>
+      <tspan x="80.845664" y="-0.571875" style="font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">−</tspan>
+      <tspan x="95.722031" y="-0.571875" style="font-size: 21px; font-family: 'Times New Roman'; fill: #1966a4">2</tspan>
+      <tspan x="69.998496" y="-7.06875" style="font-size: 14.7px; font-family: 'Times New Roman'; fill: #1966a4">2</tspan>
+      <tspan x="115.152363" y="-7.06875" style="font-size: 14.7px; font-family: 'Times New Roman'; fill: #1966a4">3</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_7">
+    <path d="M 553.7376 178.56 
+L 713.1024 178.56 
+L 713.1024 86.4 
+L 553.7376 86.4 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 560.981455 178.56 
+L 560.981455 86.4 
+" clip-path="url(#p7ce7900baf)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.16; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m6b15493303" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6b15493303" x="560.981455" y="178.56" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="560.981455" y="197.347109" transform="rotate(-0 560.981455 197.347109)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 705.858545 178.56 
+L 705.858545 86.4 
+" clip-path="url(#p7ce7900baf)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.16; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m6b15493303" x="705.858545" y="178.56" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="705.858545" y="197.347109" transform="rotate(-0 705.858545 197.347109)">1</text>
+     </g>
+    </g>
+    <g id="text_15">
+     <!-- $s$ -->
+     <g transform="translate(629.715 215.189883)">
+      <text>
+       <tspan x="0" y="-0.609375" style="font-style: italic; font-size: 19px; font-family: 'Times New Roman'">s</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <path d="M 553.7376 174.370909 
+L 713.1024 174.370909 
+" clip-path="url(#p7ce7900baf)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.16; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <defs>
+       <path id="m62044c74ee" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m62044c74ee" x="553.7376" y="174.370909" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: end" x="546.7376" y="180.264464" transform="rotate(-0 546.7376 180.264464)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <path d="M 553.7376 90.589091 
+L 713.1024 90.589091 
+" clip-path="url(#p7ce7900baf)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.16; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m62044c74ee" x="553.7376" y="90.589091" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: end" x="546.7376" y="96.482646" transform="rotate(-0 546.7376 96.482646)">1</text>
+     </g>
+    </g>
+    <g id="text_18">
+     <!-- $p$ (m) -->
+     <g transform="translate(530.0576 153.38) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.8125" style="font-style: italic; font-size: 19px; font-family: 'Times New Roman'">p</tspan>
+       <tspan x="9.5" y="-0.8125" style="font-size: 19px; font-family: 'Times New Roman'"> </tspan>
+       <tspan x="14.25" y="-0.8125" style="font-size: 19px; font-family: 'Times New Roman'">(</tspan>
+       <tspan x="20.577148" y="-0.8125" style="font-size: 19px; font-family: 'Times New Roman'">m</tspan>
+       <tspan x="35.355957" y="-0.8125" style="font-size: 19px; font-family: 'Times New Roman'">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_9">
+    <path d="M 560.981455 174.370909 
+L 563.878996 174.271711 
+L 566.776538 173.97948 
+L 569.67408 173.502259 
+L 572.571622 172.848091 
+L 576.435011 171.714517 
+L 580.2984 170.299733 
+L 584.161789 168.622806 
+L 588.025178 166.7028 
+L 591.888567 164.55878 
+L 596.717804 161.592779 
+L 601.54704 158.343782 
+L 606.376276 154.849026 
+L 612.17136 150.383343 
+L 618.932291 144.879709 
+L 627.624916 137.496185 
+L 648.873556 119.278269 
+L 655.634487 113.814255 
+L 661.429571 109.39415 
+L 666.258807 105.945566 
+L 671.088044 102.750189 
+L 675.91728 99.845257 
+L 679.780669 97.755453 
+L 683.644058 95.894429 
+L 687.507447 94.28125 
+L 691.370836 92.934982 
+L 695.234225 91.874689 
+L 698.131767 91.278609 
+L 701.029309 90.862158 
+L 703.926851 90.633377 
+L 705.858545 90.589091 
+L 705.858545 90.589091 
+" clip-path="url(#p7ce7900baf)" style="fill: none; stroke: #1966a4; stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 553.7376 178.56 
+L 553.7376 86.4 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 713.1024 178.56 
+L 713.1024 86.4 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 553.7376 178.56 
+L 713.1024 178.56 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 553.7376 86.4 
+L 713.1024 86.4 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mb5c286895a" d="M 0 2.345208 
+C 0.621956 2.345208 1.218523 2.098102 1.658312 1.658312 
+C 2.098102 1.218523 2.345208 0.621956 2.345208 0 
+C 2.345208 -0.621956 2.098102 -1.218523 1.658312 -1.658312 
+C 1.218523 -2.098102 0.621956 -2.345208 0 -2.345208 
+C -0.621956 -2.345208 -1.218523 -2.098102 -1.658312 -1.658312 
+C -2.098102 -1.218523 -2.345208 -0.621956 -2.345208 0 
+C -2.345208 0.621956 -2.098102 1.218523 -1.658312 1.658312 
+C -1.218523 2.098102 -0.621956 2.345208 0 2.345208 
+z
+" style="stroke: #000000"/>
+    </defs>
+    <g clip-path="url(#p7ce7900baf)">
+     <use xlink:href="#mb5c286895a" x="560.981455" y="174.370909" style="stroke: #000000"/>
+     <use xlink:href="#mb5c286895a" x="705.858545" y="90.589091" style="stroke: #000000"/>
+    </g>
+   </g>
+  </g>
+  <g id="text_19">
+   <text style="font-weight: 700; font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="367.2" y="25.92" transform="rotate(-0 367.2 25.92)">Endpoint values become equations in the coefficients</text>
+  </g>
+  <g id="text_20">
+   <text style="font-weight: 700; font-size: 19px; font-family: 'Times New Roman'; text-anchor: start" x="14.688" y="41.76" transform="rotate(-0 14.688 41.76)">1 Specify endpoints</text>
+  </g>
+  <g id="text_21">
+   <text style="font-weight: 700; font-size: 19px; font-family: 'Times New Roman'; text-anchor: start" x="223.992" y="41.76" transform="rotate(-0 223.992 41.76)">2 Write four equations</text>
+  </g>
+  <g id="text_22">
+   <text style="font-weight: 700; font-size: 19px; font-family: 'Times New Roman'; text-anchor: start" x="539.784" y="41.76" transform="rotate(-0 539.784 41.76)">3 Solve and evaluate</text>
+  </g>
+  <g id="text_23">
+   <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="367.2" y="280.8" transform="rotate(-0 367.2 280.8)">Legend: arrows = computation order; blue curve = solved position; black dots = endpoints.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7ce7900baf">
+   <rect x="553.7376" y="86.4" width="159.3648" height="92.16"/>
+  </clipPath>
+ </defs>
+</svg>

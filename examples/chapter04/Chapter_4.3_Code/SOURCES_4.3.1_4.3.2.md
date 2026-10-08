@@ -1,0 +1,20 @@
+# Sources and figure provenance
+
+Algorithm exposition revision, checked 8 October 2026.
+
+- [1] Peter Corke, Robotics, Vision and Control: Fundamental Algorithms in Python, 3rd ed., 2023. Local reference book, Chapter 3 Section 3.3 Creating Time-Varying Pose, printed pp.98–102 (PDF122–126), read and visually inspected. Source of the teaching context on timing, endpoint constraints and polynomial interpolation; no book figures copied.
+- [10] D. Mellinger and V. Kumar, Minimum Snap Trajectory Generation and Control for Quadrotors, ICRA2011,2520–2525. DOI https://doi.org/10.1109/ICRA.2011.5980409 . Retained foundational reference. Publisher full text was not freshly accessible; detailed polynomial constraints and objective were checked with the author manuscript below.
+- [27] C. Richter, A. Bry, N. Roy, Polynomial Trajectory Planning for Aggressive Quadrotor Flight in Dense Indoor Environments. ISRR2013 manuscript, published Robotics Research, STAR114,649–666,2016. https://groups.csail.mit.edu/rrg/papers/Richter_ISRR13.pdf . Read pp.4–8 and inspected pp.5–8; official online manuscript rechecked for this revision. Fixed durations, coefficient costs, equality constraints, numerical conditioning and the endpoint-derivative alternative support the presentation. The teaching solver is a small coefficient-based equality QP, not their complete planning/control system.
+
+Figures are English Times New Roman editable SVG/PNG files. trajectory_figures.py calls algorithm_figures.py.
+
+- Figure4.15: corner handling, S(0,0), W(2,0), T(2,2). The joint blue curve is computed by the same septic solver; arrows in this figure indicate velocity directions, not measured magnitudes. Stopped motion retains the original polyline. Smooth passage still goes through the mandatory waypoint.
+- Figure4.16: elementary boundary-equation construction for the scalar cubic over1s from0m to1m with zero endpoint velocities. Four equations give coefficients(0,0,3,-2). This diagram teaches interpolation; it is not a minimum-snap optimum with eight endpoint conditions.
+- Figure4.17: schematic two-segment coupling. Colored blocks identify the corresponding coefficient columns in the equality matrix. h_r(s) is a row basis derivative; duration factors convert normalized derivatives into physical derivatives. There are16 coefficients,13 independent equality rows and3 free directions per coordinate. The route is schematic; arrows indicate matching and computation order.
+- Figure4.18: the computed three-segment case from build_cases(). Waypoints(1,3,1),(4,7,1),(9,7,1),(13,3,1); durations2,2,2s. Overall velocity, acceleration and jerk are zero. Total snap cost across3 coordinates is64575 for stopped interpolation versus1227.477434997... for the joint QP, in m²/s⁷. Internal derivatives remain free in the QP. The joint curve hits the upper box; plotted red intervals come from the whole-polynomial collision check.
+
+Boxes already include clearance: A=[6,7]×[0,6]×[0.5,1.5]m and B=[5.8,6.6]×[9.1,9.7]×[0.5,1.5]m. Complete numerical data, including dilation and derivative limits, remain in results/trajectory_results.json and the AppendixA5 example. Shortened main text reports one representative result; the code retains the fuller numerical verification.
+
+Physical derivative equality uses tau_i^(-r)h_r(1)c_i minus tau_(i+1)^(-r)h_r(0)c_(i+1)=0. Interpolation endpoint matrix E is independent of duration; its right-hand side includes powers tau,tau²,tau³. These definitions were checked against polynomial derivative identities and nonunit-duration interpolation. Earlier QP, C3 continuity, extrema, scaling, collision and independent C++ coefficient/metric checks are retained.
+
+The normalized coefficient solver uses scaled dense KKT equations. Numerical root checks use floating arithmetic, not exact-arithmetic certification; plotting samples are not collision evidence. All examples fix yaw and model translational motion, without controller, actuator or real-flight validation. Full vehicle feasibility and online constrained planning belong to later sections.

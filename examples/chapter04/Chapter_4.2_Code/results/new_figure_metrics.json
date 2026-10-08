@@ -1,0 +1,15 @@
+{
+  "rewiring": {
+    "local_radius": 3,
+    "g_N_via_B": 7.931320791582797,
+    "g_N_via_S": 2.5942243542145693,
+    "g_B_rewired": 4.525545145797366
+  },
+  "kino": {
+    "max_speed": 2.23606797749979,
+    "max_acceleration": 1.4142135623730951,
+    "time": 8.0,
+    "cost": 10.4,
+    "expanded": 789
+  }
+}

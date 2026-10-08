@@ -1,0 +1,8 @@
+Dijkstra 50.284 1393
+A* 50.284 234
+Weighted A* 54.385 51
+Theta* 47.648 286
+Shortcut 48.546
+Close 45.698 631 302
+Reopen 26.0 7 27
+Remote 26.0 0 27

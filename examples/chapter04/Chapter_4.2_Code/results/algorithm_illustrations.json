@@ -1,0 +1,34 @@
+{
+  "weighted_candidates": {
+    "a": {
+      "g": 2,
+      "h": 4
+    },
+    "b": {
+      "g": 5,
+      "h": 2
+    }
+  },
+  "shortcut_length": 2.8284271247461903,
+  "theta_candidate_cost": 3.8284271247461903,
+  "directed_repair": {
+    "before": {
+      "S": 3,
+      "u": 2,
+      "v": 4,
+      "T": 0
+    },
+    "closed": {
+      "S": 6,
+      "u": "infinity",
+      "v": 4,
+      "T": 0
+    },
+    "reopened": {
+      "S": 3,
+      "u": 2,
+      "v": 4,
+      "T": 0
+    }
+  }
+}
