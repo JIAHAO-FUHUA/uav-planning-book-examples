@@ -86,3 +86,7 @@ specified geometric or reduced translational models. See
 [external projects](docs/external_projects.md) for later EGO-Planner-v2,
 EGO-Swarm, Fast-Planner and learning cases. Those integrations will be added as
 their book sections are completed and their environments are verified.
+
+Figures are designed for **black and white printing**. Line styles, point markers
+and hatching carry meaning, so the examples remain readable without color.
+The SVGs retain editable English Times New Roman text and geometry.

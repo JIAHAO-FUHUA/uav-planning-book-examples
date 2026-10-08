@@ -40,3 +40,12 @@ On Windows use `-o trajectory.exe` and `.\trajectory.exe --self-test`.
 The repository's CMake build also includes this program. Sources, scene definitions
 and numerical validation are described in `SOURCES_4.3.1_4.3.2.md` and
 `docs/reproducibility.md`.
+
+## Black and white printing
+
+Teaching figures use black and grayscale, with line styles, markers and hatching
+to distinguish paths, search states and methods. Legends and captions must remain
+understandable without color. Labels use Times New Roman and stay in English in
+both book editions; editable SVGs and Python plotting sources are retained.
+`print_style.py` applies the final grayscale export. Figure 4.3 keeps its horizontal
+layout and published-source attribution; external source frames are not distributed in this repository.

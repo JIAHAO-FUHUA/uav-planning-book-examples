@@ -59,3 +59,6 @@ ctest --test-dir build -C Release --output-on-failure
 场景、随机种子及结果含义见[复现说明](docs/reproducibility.md)。EGO-Planner-v2、
 EGO-Swarm、Fast-Planner 与学习方法将随后续书稿及环境核实逐步加入，
 目前的状态见[外部项目说明](docs/external_projects.md)。
+
+图片按**黑白印刷**设计，使用线型、标记和斜线表达区别，不依赖颜色。
+SVG 保留可编辑的英文 Times New Roman 文字与图形。

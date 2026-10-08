@@ -14,6 +14,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyBboxPatch
 from matplotlib.lines import Line2D
 from matplotlib.transforms import Bbox
+from print_style import make_print_ready
 import numpy as np
 from planning import Grid, static_scene, dynamic_scene, search, DStarLite
 from planning import shortcut_path, length, validate_path
@@ -25,16 +26,17 @@ FIG = ROOT/'visual_figures'
 RESULTS = ROOT/'results'
 FIG.mkdir(exist_ok=True)
 RESULTS.mkdir(exist_ok=True)
-BLUE = '#1261A0'
-ORANGE = '#C95621'
-GREEN = '#19734A'
-GRAY = '#D8DDE2'
-DARK = '#222B34'
+BLUE = '#111111'
+ORANGE = '#333333'
+GREEN = '#555555'
+GRAY = '#D0D0D0'
+DARK = '#202020'
 plt.rcParams.update({'font.family':'Times New Roman', 'font.size':17,
                      'axes.titlesize':18, 'axes.labelsize':16,
                      'savefig.dpi':260, 'svg.fonttype':'none'})
 
 def save(fig, name):
+    make_print_ready(fig)
     fig.canvas.draw()
     bound=fig.get_tightbbox(fig.canvas.get_renderer())
     fixed=Bbox.from_extents(min(0,bound.x0),min(0,bound.y0),max(fig.get_figwidth(),bound.x1),max(fig.get_figheight(),bound.y1))
@@ -85,7 +87,7 @@ def history():
         arrow(ax,(x,1.27),(1.5,.83),color)
     ax.add_patch(FancyBboxPatch((.16,.17),2.68,.60,boxstyle='round,pad=.02',facecolor='#EDF2F6',edgecolor=DARK))
     ax.text(1.5,.47,'HYBRID SYSTEM: propose → check → execute',ha='center',va='center',fontsize=17,fontweight='bold')
-    ax.text(1.5,-.06,'Legend: blue = search/sampling; green = trajectories; orange = learning/semantics.\nRead columns downward; selected milestones, not a common time scale.',ha='center',va='top',fontsize=14.5)
+    ax.text(1.5,-.06,'Legend: columns = planning families; arrows = progression and combination.\nRead columns downward; selected milestones, not a common time scale.',ha='center',va='top',fontsize=14.5)
     save(fig,'fig_4_2_development')
 
 def small_map(ax, grid, start, goal, labels=('S','T')):
@@ -108,12 +110,12 @@ def environment():
     fig.subplots_adjust(left=.025,right=.975,top=.89,bottom=.12,hspace=.40,wspace=.16)
     fig.suptitle('From obstacle geometry to a searchable route',fontweight='bold',y=.995,fontsize=20)
     ax=axs[0,0];small_map(ax,Grid(9,7),s,t);ax.grid(False,which='minor')
-    ax.add_patch(Rectangle((3.1,1.1),1.8,3.8,fc=GRAY,ec='#888888',lw=1.1))
+    ax.add_patch(Rectangle((3.1,1.1),1.8,3.8,fc='#EEEEEE',ec='#888888',lw=1.1,hatch='///'))
     ax.add_patch(Rectangle((3.5,1.5),1,3,fc=DARK))
     ax.text(4,5.6,'0.4 m clearance',ha='center',fontsize=15)
     arrow(ax,(4,5.2),(4,4.7))
     ax.set_title('1  Inflate the obstacle',loc='left',fontsize=17,pad=9)
-    ax.text(.5,-.10,'Gray = vehicle radius + margin',transform=ax.transAxes,ha='center',fontsize=15)
+    ax.text(.5,-.10,'Hatched margin = vehicle radius + clearance',transform=ax.transAxes,ha='center',fontsize=15)
     ax=axs[0,1];small_map(ax,grid,s,t)
     for x in range(9):
         for y in range(7):
@@ -132,7 +134,7 @@ def environment():
     ax.plot(*zip(*r.path),c=BLUE,lw=3,zorder=4)
     ax.set_title('4  Search the legal graph',loc='left',fontsize=17,pad=9)
     ax.text(.5,-.10,f'A*: collision-free route, length {r.cost:.2f} m',transform=ax.transAxes,ha='center',fontsize=15)
-    fig.text(.5,.012,'S = start   T = goal   Black = occupied   Blue = accepted connection / route',ha='center',fontsize=14.3)
+    fig.text(.5,.012,'S = start   T = goal   Filled cells = occupied   Solid line = accepted connection / route',ha='center',fontsize=14.3)
     save(fig,'fig_4_4_discretization')
     return {'shape':[9,7],'blocked':sorted(blocked),'path':r.path,'cost':r.cost}
 
@@ -162,13 +164,13 @@ def selection():
         for x in range(7):
             for y in range(2):
                 p=(x,y);chosen=p in order;known=p in g
-                fc='#D8E8F4' if chosen else ('#FFF0DE' if known else 'white')
-                ax.add_patch(Rectangle((x-.5,y-.5),1,1,facecolor=fc,edgecolor='#9EABB6',lw=1))
+                fc='#C5C5C5' if chosen else 'white'
+                ax.add_patch(Rectangle((x-.5,y-.5),1,1,facecolor=fc,edgecolor='#777777',lw=1,hatch='///' if known and not chosen else None))
                 name='S' if p==(0,0) else ('T' if p==(6,0) else ('A' if p==(1,0) else ('B' if p==(0,1) else '')))
                 if chosen:label=f'{name+": " if name else ""}#{order.index(p)+1}\n$g={g[p]}$'
                 elif known:label=f'{name+": " if name else ""}waiting\n$f={g[p]+abs(x-6)+y}$' if use_h else 'waiting'
                 else:label='unseen'
-                ax.text(x,y,label,ha='center',va='center',fontsize=15.2,linespacing=1.35)
+                ax.text(x,y,label,ha='center',va='center',fontsize=15.2,linespacing=1.35,bbox={'facecolor':'white','edgecolor':'none','pad':1} if known and not chosen else None)
         ax.set(xlim=(-.5,6.5),ylim=(-.5,1.5),aspect='auto');ax.axis('off')
         title=f'{"A*: choose minimum $g+h$" if use_h else "Dijkstra: choose minimum $g$"}   |   {len(order)} nodes processed'
         ax.set_title(title,loc='left',fontsize=17.8,fontweight='bold',pad=12)
@@ -176,7 +178,7 @@ def selection():
     ax.text(.02,.98,'First choice after S',transform=ax.transAxes,fontweight='bold',fontsize=17)
     ax.text(.02,.64,'Dijkstra: $g(\\mathrm{A})=g(\\mathrm{B})=1$\nBoth have equal priority.',transform=ax.transAxes,va='top',fontsize=16.5,linespacing=1.35)
     ax.text(.55,.64,'A*: $f(\\mathrm{A})=1+5=6$\n       $f(\\mathrm{B})=1+7=8$ → choose A',transform=ax.transAxes,va='top',fontsize=16.5,linespacing=1.35,color=BLUE)
-    fig.text(.5,.017,'# = queue removal order (including T)   Blue = processed   Orange = discovered, still waiting',ha='center',fontsize=13.4)
+    fig.text(.5,.017,'# = queue removal order (including T)   Gray fill = processed   Hatching = discovered, still waiting',ha='center',fontsize=13.4)
     save(fig,'fig_4_5_astar_selection')
     return {'dijkstra_order':allorders[0],'astar_order':allorders[1],'tie_break':'smaller h, then east-first insertion order'}
 
@@ -263,4 +265,4 @@ if __name__=='__main__':
     (RESULTS/'visual_revision.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
     from algorithm_exposition_figures import main as revised_mechanisms
     revised_mechanisms()
-    print('Created the available Times New Roman figures; all plotted routes passed collision checks.')
+    print('Created the available Times New Roman publication figures; all plotted routes passed collision checks.')

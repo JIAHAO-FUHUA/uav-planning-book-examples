@@ -7,6 +7,7 @@ from matplotlib import font_manager
 from matplotlib.patches import Rectangle
 from matplotlib.transforms import Bbox
 from PIL import Image
+from print_style import make_print_ready
 
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT/'visual_figures'
@@ -28,6 +29,7 @@ def configure_fonts():
         'mathtext.fallback':'stix'})
 
 def save(fig,name):
+    make_print_ready(fig)
     fig.canvas.draw()
     bound=fig.get_tightbbox(fig.canvas.get_renderer())
     fixed=Bbox.from_extents(min(0,bound.x0),min(0,bound.y0),
@@ -74,10 +76,10 @@ def source_demonstrations():
     panels = [
         ('(a) EGO-Planner-v2\nSimulated trajectories among obstacles',
          'ego_frame_160s.png',
-         'Legend: colored curves = planned trajectories;\nvertical shapes = obstacles'),
+         'Legend: curves = planned trajectories;\nvertical shapes = obstacles'),
         ('(b) Agile Autonomy\nLearned flight around a tree',
          'agile_frame_37.png',
-         'Legend: repeated red UAVs = successive positions;\ntree = obstacle')]
+         'Legend: repeated UAVs = successive positions;\ntree = obstacle')]
     for column, (title, filename, legend) in enumerate(panels):
         title_ax = fig.add_subplot(layout[0, column])
         title_ax.axis('off')

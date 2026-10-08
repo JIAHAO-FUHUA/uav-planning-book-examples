@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-08T16:13:04.743284</dc:date>
+    <dc:date>2026-10-08T17:47:10.087422</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,50 +32,50 @@ z
    <g id="patch_2">
     <path d="M 101.786181 175.678364 
 Q 137.233403 149.092948 169.997343 124.519993 
-" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 3; stroke-linecap: round"/>
     <path d="M 162.077343 125.959993 
 L 169.997343 124.519993 
 L 166.397343 131.719993 
-" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="text_1">
-    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="137.232" y="139.25736" transform="rotate(-0 137.232 139.25736)">1</text>
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle" x="137.232" y="139.25736" transform="rotate(-0 137.232 139.25736)">1</text>
    </g>
    <g id="patch_3">
     <path d="M 211.082181 122.509636 
 Q 246.529403 149.095052 279.293343 173.668007 
-" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 3; stroke-linecap: round"/>
     <path d="M 275.693343 166.468007 
 L 279.293343 173.668007 
 L 271.373343 172.228007 
-" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="246.528" y="139.25736" transform="rotate(-0 246.528 139.25736)">2</text>
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle" x="246.528" y="139.25736" transform="rotate(-0 246.528 139.25736)">2</text>
    </g>
    <g id="patch_4">
     <path d="M 101.786181 204.481636 
 Q 137.233403 231.067052 171.070656 256.444992 
-" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+" style="fill: none; stroke-dasharray: 1.8,2.97; stroke-dashoffset: 0; stroke: #888888; stroke-width: 1.8; stroke-linecap: round"/>
     <path d="M 167.470656 249.244992 
 L 171.070656 256.444992 
 L 163.150656 255.004992 
-" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+" style="fill: none; stroke-dasharray: 1.8,2.97; stroke-dashoffset: 0; stroke: #888888; stroke-width: 1.8; stroke-linecap: round"/>
    </g>
    <g id="text_3">
-    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #9ca5ae" x="137.232" y="247.4604" transform="rotate(-0 137.232 247.4604)">2</text>
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle" x="137.232" y="247.4604" transform="rotate(-0 137.232 247.4604)">2</text>
    </g>
    <g id="patch_5">
     <path d="M 211.082181 257.650364 
 Q 246.529403 231.064948 280.366656 205.687008 
-" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+" style="fill: none; stroke-dasharray: 1.8,2.97; stroke-dashoffset: 0; stroke: #888888; stroke-width: 1.8; stroke-linecap: round"/>
     <path d="M 272.446656 207.127008 
 L 280.366656 205.687008 
 L 276.766656 212.887008 
-" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+" style="fill: none; stroke-dasharray: 1.8,2.97; stroke-dashoffset: 0; stroke: #888888; stroke-width: 1.8; stroke-linecap: round"/>
    </g>
    <g id="text_4">
-    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #9ca5ae" x="246.528" y="247.4604" transform="rotate(-0 246.528 247.4604)">4</text>
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle" x="246.528" y="247.4604" transform="rotate(-0 246.528 247.4604)">4</text>
    </g>
    <g id="text_5">
     <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="82.584" y="170.093962" transform="rotate(-0 82.584 170.093962)">g = 3</text>
@@ -103,7 +103,7 @@ C 68.405917 181.84574 66.73608 185.877082 66.73608 190.08
 C 66.73608 194.282918 68.405917 198.31426 71.377828 201.286172 
 C 74.34974 204.258083 78.381082 205.92792 82.584 205.92792 
 z
-" clip-path="url(#pac0abb9209)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+" clip-path="url(#p9cc4f785ac)" style="fill: #ffffff; stroke: #202020; stroke-width: 1.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 191.88 123.95592 
@@ -116,7 +116,7 @@ C 177.701917 99.87374 176.03208 103.905082 176.03208 108.108
 C 176.03208 112.310918 177.701917 116.34226 180.673828 119.314172 
 C 183.64574 122.286083 187.677082 123.95592 191.88 123.95592 
 z
-" clip-path="url(#pac0abb9209)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+" clip-path="url(#p9cc4f785ac)" style="fill: #ffffff; stroke: #202020; stroke-width: 1.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 191.88 287.89992 
@@ -129,7 +129,7 @@ C 177.701917 263.81774 176.03208 267.849082 176.03208 272.052
 C 176.03208 276.254918 177.701917 280.28626 180.673828 283.258172 
 C 183.64574 286.230083 187.677082 287.89992 191.88 287.89992 
 z
-" clip-path="url(#pac0abb9209)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+" clip-path="url(#p9cc4f785ac)" style="fill: #ffffff; stroke: #202020; stroke-width: 1.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 301.176 205.92792 
@@ -142,7 +142,7 @@ C 286.997917 181.84574 285.32808 185.877082 285.32808 190.08
 C 285.32808 194.282918 286.997917 198.31426 289.969828 201.286172 
 C 292.94174 204.258083 296.973082 205.92792 301.176 205.92792 
 z
-" clip-path="url(#pac0abb9209)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+" clip-path="url(#p9cc4f785ac)" style="fill: #ffffff; stroke: #202020; stroke-width: 1.7; stroke-linejoin: miter"/>
    </g>
    <g id="text_10">
     <text style="font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="82.584" y="195.33293" transform="rotate(-0 82.584 195.33293)">S</text>
@@ -161,50 +161,50 @@ z
    <g id="patch_10">
     <path d="M 474.026181 175.678364 
 Q 509.473403 149.092948 543.310656 123.715008 
-" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+" style="fill: none; stroke-dasharray: 1.8,2.97; stroke-dashoffset: 0; stroke: #888888; stroke-width: 1.8; stroke-linecap: round"/>
     <path d="M 535.390656 125.155008 
 L 543.310656 123.715008 
 L 539.710656 130.915008 
-" style="fill: none; stroke: #9ca5ae; stroke-width: 1.8; stroke-linecap: round"/>
+" style="fill: none; stroke-dasharray: 1.8,2.97; stroke-dashoffset: 0; stroke: #888888; stroke-width: 1.8; stroke-linecap: round"/>
    </g>
    <g id="text_14">
-    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #9ca5ae" x="509.472" y="139.25736" transform="rotate(-0 509.472 139.25736)">1</text>
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle" x="509.472" y="139.25736" transform="rotate(-0 509.472 139.25736)">1</text>
    </g>
    <g id="patch_11">
     <path d="M 583.322181 122.509636 
 Q 618.769403 149.095052 652.606656 174.472992 
-" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #c95621; stroke-width: 1.8; stroke-linecap: round"/>
+" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #333333; stroke-width: 1.8; stroke-linecap: round"/>
     <path d="M 649.006656 167.272992 
 L 652.606656 174.472992 
 L 644.686656 173.032992 
-" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #c95621; stroke-width: 1.8; stroke-linecap: round"/>
+" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #333333; stroke-width: 1.8; stroke-linecap: round"/>
    </g>
    <g id="text_15">
-    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #c95621" x="618.768" y="139.25736" transform="rotate(-0 618.768 139.25736)">∞</text>
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle" x="618.768" y="139.25736" transform="rotate(-0 618.768 139.25736)">∞</text>
    </g>
    <g id="patch_12">
     <path d="M 474.026181 204.481636 
 Q 509.473403 231.067052 542.237343 255.640007 
-" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 3; stroke-linecap: round"/>
     <path d="M 538.637343 248.440007 
 L 542.237343 255.640007 
 L 534.317343 254.200007 
-" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="text_16">
-    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="509.472" y="247.4604" transform="rotate(-0 509.472 247.4604)">2</text>
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle" x="509.472" y="247.4604" transform="rotate(-0 509.472 247.4604)">2</text>
    </g>
    <g id="patch_13">
     <path d="M 583.322181 257.650364 
 Q 618.769403 231.064948 651.533343 206.491993 
-" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 3; stroke-linecap: round"/>
     <path d="M 643.613343 207.931993 
 L 651.533343 206.491993 
 L 647.933343 213.691993 
-" style="fill: none; stroke: #1261a0; stroke-width: 3; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="text_17">
-    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="618.768" y="247.4604" transform="rotate(-0 618.768 247.4604)">4</text>
+    <text style="font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle" x="618.768" y="247.4604" transform="rotate(-0 618.768 247.4604)">4</text>
    </g>
    <g id="text_18">
     <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="454.824" y="170.093962" transform="rotate(-0 454.824 170.093962)">g = 6</text>
@@ -232,7 +232,7 @@ C 440.645917 181.84574 438.97608 185.877082 438.97608 190.08
 C 438.97608 194.282918 440.645917 198.31426 443.617828 201.286172 
 C 446.58974 204.258083 450.621082 205.92792 454.824 205.92792 
 z
-" clip-path="url(#p4ca3045807)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+" clip-path="url(#p15cb7bcc10)" style="fill: #ffffff; stroke: #202020; stroke-width: 1.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_15">
     <path d="M 564.12 123.95592 
@@ -245,7 +245,7 @@ C 549.941917 99.87374 548.27208 103.905082 548.27208 108.108
 C 548.27208 112.310918 549.941917 116.34226 552.913828 119.314172 
 C 555.88574 122.286083 559.917082 123.95592 564.12 123.95592 
 z
-" clip-path="url(#p4ca3045807)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+" clip-path="url(#p15cb7bcc10)" style="fill: #ffffff; stroke: #202020; stroke-width: 1.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_16">
     <path d="M 564.12 287.89992 
@@ -258,7 +258,7 @@ C 549.941917 263.81774 548.27208 267.849082 548.27208 272.052
 C 548.27208 276.254918 549.941917 280.28626 552.913828 283.258172 
 C 555.88574 286.230083 559.917082 287.89992 564.12 287.89992 
 z
-" clip-path="url(#p4ca3045807)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+" clip-path="url(#p15cb7bcc10)" style="fill: #ffffff; stroke: #202020; stroke-width: 1.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_17">
     <path d="M 673.416 205.92792 
@@ -271,7 +271,7 @@ C 659.237917 181.84574 657.56808 185.877082 657.56808 190.08
 C 657.56808 194.282918 659.237917 198.31426 662.209828 201.286172 
 C 665.18174 204.258083 669.213082 205.92792 673.416 205.92792 
 z
-" clip-path="url(#p4ca3045807)" style="fill: #ffffff; stroke: #222b34; stroke-width: 1.7; stroke-linejoin: miter"/>
+" clip-path="url(#p15cb7bcc10)" style="fill: #ffffff; stroke: #202020; stroke-width: 1.7; stroke-linejoin: miter"/>
    </g>
    <g id="text_23">
     <text style="font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="454.824" y="195.33293" transform="rotate(-0 454.824 195.33293)">S</text>
@@ -285,6 +285,18 @@ z
    <g id="text_26">
     <text style="font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="673.416" y="195.33293" transform="rotate(-0 673.416 195.33293)">T</text>
    </g>
+   <g id="line2d_1">
+    <defs>
+     <path id="mdd8e7e03f5" d="M -4.5 4.5 
+L 4.5 -4.5 
+M -4.5 -4.5 
+L 4.5 4.5 
+" style="stroke: #000000; stroke-width: 2"/>
+    </defs>
+    <g clip-path="url(#p15cb7bcc10)">
+     <use xlink:href="#mdd8e7e03f5" x="618.768" y="149.094" style="stroke: #000000; stroke-width: 2"/>
+    </g>
+   </g>
   </g>
   <g id="text_27">
    <text style="font-weight: 700; font-size: 22px; font-family: 'Times New Roman'; text-anchor: middle" x="378" y="19.663875" transform="rotate(-0 378 19.663875)">D* Lite: invalidate old costs, then repair</text>
@@ -294,27 +306,27 @@ z
    <text style="font-size: 17px; font-family: 'Times New Roman'" transform="translate(149.58375 357.22817)">Reopen: u has g = ∞ &gt; rhs = 2  →  accept 2; S changes from 6 to 3.</text>
   </g>
   <g id="text_29">
-   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #222b34" transform="translate(113.094727 392.615373)">g = rhs</text>
-   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #222b34" transform="translate(47.861719 413.617424)">Consistent: no queue entry</text>
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(113.094727 392.615373)">g = rhs</text>
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(47.861719 413.617424)">Consistent: no queue entry</text>
   </g>
   <g id="text_30">
-   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #1261a0" transform="translate(355.014727 392.615373)">g &gt; rhs</text>
-   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #1261a0" transform="translate(308.348086 413.617424)">Cheaper: set g ← rhs</text>
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(355.014727 392.615373)">g &gt; rhs</text>
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(308.348086 413.617424)">Cheaper: set g ← rhs</text>
   </g>
   <g id="text_31">
-   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #c95621" transform="translate(596.934727 392.615373)">g &lt; rhs</text>
-   <text style="font-size: 16.5px; font-family: 'Times New Roman'; fill: #c95621" transform="translate(513.685781 413.617424)">Obsolete: set g ← ∞, recompute</text>
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(596.934727 392.615373)">g &lt; rhs</text>
+   <text style="font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(513.685781 413.617424)">Obsolete: set g ← ∞, recompute</text>
   </g>
   <g id="text_32">
    <text style="font-size: 15.5px; font-family: 'Times New Roman'" transform="translate(174.051484 437.629528)">Arrows = directed edges; labels = edge costs; g = stored cost to T.</text>
-   <text style="font-size: 15.5px; font-family: 'Times New Roman'" transform="translate(147.745078 454.061042)">Blue = selected route; gray = unused edge; orange dashed = blocked edge.</text>
+   <text style="font-size: 15.5px; font-family: 'Times New Roman'" transform="translate(169.229531 454.061042)">Thick solid = route; thin dotted = unused; dashed with x = blocked.</text>
   </g>
  </g>
  <defs>
-  <clipPath id="pac0abb9209">
+  <clipPath id="p9cc4f785ac">
    <rect x="49.7952" y="80.784" width="284.1696" height="218.592"/>
   </clipPath>
-  <clipPath id="p4ca3045807">
+  <clipPath id="p15cb7bcc10">
    <rect x="422.0352" y="80.784" width="284.1696" height="218.592"/>
   </clipPath>
  </defs>

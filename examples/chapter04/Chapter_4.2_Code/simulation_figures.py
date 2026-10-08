@@ -9,7 +9,7 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 from figure_support import configure_fonts,save
 
 ROOT=Path(__file__).resolve().parent
-BLUE='#1764a5';GREEN='#167344';GRAY='#989fa5';ORANGE='#c06a19';RED='#b33030'
+BLUE='#111111';GREEN='#444444';GRAY='#999999';ORANGE='#333333';RED='#222222'
 
 def moving_grid(report):
     fig,axes=plt.subplots(2,2,figsize=(10.1,8.6))
@@ -18,8 +18,8 @@ def moving_grid(report):
         ax.set(xlim=(-.5,47.5),ylim=(-.5,31.5),aspect='equal');ax.axis('off')
         for x,y in e['blocked']:ax.add_patch(Rectangle((x-.5,y-.5),1,1,fc='#303030',ec='none'))
         for (x,y),blocked in e['changes']:
-            ax.add_patch(Rectangle((x-.5,y-.5),1,1,fc=ORANGE if blocked else '#fff0d9',ec=ORANGE,lw=1,zorder=3))
-        for path,color,ls,lw in [(e['previous_plan'],GRAY,'--',1.4),(e['executed'],GREEN,'-',2.5),(e['path'],BLUE,'-',2.5)]:
+            ax.add_patch(Rectangle((x-.5,y-.5),1,1,fc='#BBBBBB' if blocked else 'white',ec='black',hatch='///',lw=.8,zorder=3))
+        for path,color,ls,lw in [(e['previous_plan'],GRAY,'--',1.4),(e['executed'],GREEN,'-.',2.5),(e['path'],BLUE,'-',2.5)]:
             if path:
                 a=np.array(path);ax.plot(a[:,0],a[:,1],c=color,ls=ls,lw=lw,zorder=4)
         c=e['current'];g=e['goal'];ax.plot(*c,'o',c=BLUE,ms=8,zorder=6);ax.plot(*g,'*',c=GREEN,ms=13,zorder=6)
@@ -38,10 +38,10 @@ def moving_grid(report):
             length+f'; current = ({c[0]},{c[1]})\nProcessed: D* Lite {e["dstar_processed"]}; fresh A* {e["astar_processed"]}',
             fontsize=16,ha='center',va='top',linespacing=1.25)
     fig.text(.5,.96,'Observe map changes before executing the next edge',fontsize=20,fontweight='bold',ha='center')
-    fig.legend(handles=[Line2D([],[],c=GREEN,lw=2.5,label='Already executed'),
+    fig.legend(handles=[Line2D([],[],c=GREEN,lw=2.5,ls='-.',label='Already executed'),
         Line2D([],[],c=BLUE,lw=2.5,label='Current planned route'),
         Line2D([],[],c=GRAY,ls='--',lw=1.4,label='Previous plan'),
-        Rectangle((0,0),1,1,fc=ORANGE,label='Changed cells'),
+        Rectangle((0,0),1,1,fc='white',ec='black',hatch='///',label='Changed cells'),
         Rectangle((0,0),1,1,fc='#303030',label='Occupied cells')],
         loc='lower center',bbox_to_anchor=(.5,.045),ncol=3,frameon=False,fontsize=16)
     fig.text(.5,.012,'Circle = current; star = T; step = grid edges; length = cell units; counts = Python queue removals.',ha='center',fontsize=15.0)
@@ -107,13 +107,13 @@ def sampling_comparison(report):
     a=axes[1];seeds=report['settings']['seeds'];xx=np.arange(len(seeds));barwidth=.32
     for shift,name,color in [(-barwidth/2,'RRT',GRAY),(barwidth/2,'RRT*',BLUE)]:
         values=[row['cost'] for row in report['seed_results'] if row['algorithm']==name]
-        bars=a.bar(xx+shift,values,barwidth,color=color,label=name)
+        bars=a.bar(xx+shift,values,barwidth,color='white' if name=='RRT' else BLUE,edgecolor='black',hatch='///' if name=='RRT' else None,label=name)
         a.bar_label(bars,fmt='%.1f',fontsize=13,padding=2)
     a.set_xticks(xx,seeds);a.set(xlabel='Specified seed',ylabel='Final path length (m)',ylim=(0,32))
     a.set_title('(b) Repeat with five fixed seeds',fontsize=18,fontweight='bold',pad=12)
     for ax in axes:ax.tick_params(labelsize=14);ax.xaxis.label.set_size(16);ax.yaxis.label.set_size(16)
     fig.text(.5,.945,'Within each seed: identical accepted coordinates, different tree parents and costs.',ha='center',fontsize=18)
-    fig.text(.5,.125,'Legend: gray = RRT without rewiring; blue = RRT* with rewiring. Both retain the best goal route.',ha='center',fontsize=15.5)
+    fig.text(.5,.125,'Dashed / hatched = RRT; solid = RRT*. Both retain the best goal route.',ha='center',fontsize=15.5)
     fig.text(.5,.045,'All 5 seeds succeed for each method in this scene; this is not a general success-rate claim.',ha='center',fontsize=15.5)
     save(fig,'fig_4_14_3d_comparison')
 

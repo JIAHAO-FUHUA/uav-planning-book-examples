@@ -58,3 +58,12 @@ This replaces the recorded 3D JSON. Restore the default five-seed case using
 `simulations.py --case all` before generating the comparison figures.
 See the `SOURCES_*.md` files and `docs/reproducibility.md` for constraints,
 references and interpretation of the toy cases.
+
+## Black and white printing
+
+Teaching figures use black and grayscale, with line styles, markers and hatching
+to distinguish paths, search states and methods. Legends and captions must remain
+understandable without color. Labels use Times New Roman and stay in English in
+both book editions; editable SVGs and Python plotting sources are retained.
+`print_style.py` applies the final grayscale export. Figure 4.3 keeps its horizontal
+layout and published-source attribution; external source frames are not distributed in this repository.

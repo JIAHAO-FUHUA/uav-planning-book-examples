@@ -14,7 +14,7 @@ from figure_support import configure_fonts, save
 
 configure_fonts()
 ROOT=Path(__file__).resolve().parent
-BLUE='#1261A0'; ORANGE='#C95621'; GREEN='#19734A'; GRAY='#9CA5AE'; DARK='#222B34'
+BLUE='#111111'; ORANGE='#333333'; GREEN='#555555'; GRAY='#888888'; DARK='#202020'
 plt.rcParams.update({'font.size':17,'axes.titlesize':18,'svg.fonttype':'none'})
 
 def arrow(ax,a,b,color=DARK,ls='-',lw=2.2):
@@ -80,8 +80,9 @@ def repair():
             pa,pb=coords[a],coords[b]
             blocked=i==1 and (a,b)==('u','T')
             color=ORANGE if blocked else (BLUE if (a,b) in active else GRAY)
-            arrow(ax,pa,pb,color,ls='--' if blocked else '-',lw=3 if (a,b) in active else 1.8)
+            arrow(ax,pa,pb,color,ls='--' if blocked else ('-' if (a,b) in active else ':'),lw=3 if (a,b) in active else 1.8)
             x,y=((pa[0]+pb[0])/2,(pa[1]+pb[1])/2)
+            if blocked:ax.plot(x,y,'x',color='black',ms=9,mew=2,zorder=6)
             ax.text(x,y+(.18 if y>0 else -.30),'∞' if blocked else str(c),ha='center',color=color,fontsize=21)
         for n,p in coords.items():
             ax.add_patch(Circle(p,.29,fc='white',ec=DARK,lw=1.7,zorder=4))
@@ -91,7 +92,7 @@ def repair():
     fig.text(.5,.33,'Close: u has g = 2 < rhs = ∞  →  invalidate; S changes from 3 to 6.\nReopen: u has g = ∞ > rhs = 2  →  accept 2; S changes from 6 to 3.',ha='center',va='top',fontsize=17,linespacing=1.5)
     for x,text,color in [(.18,'g = rhs\nConsistent: no queue entry',DARK),(.5,'g > rhs\nCheaper: set g ← rhs',BLUE),(.82,'g < rhs\nObsolete: set g ← ∞, recompute',ORANGE)]:
         fig.text(x,.16,text,ha='center',va='center',fontsize=16.5,color=color,linespacing=1.4)
-    fig.text(.5,.035,'Arrows = directed edges; labels = edge costs; g = stored cost to T.\nBlue = selected route; gray = unused edge; orange dashed = blocked edge.',ha='center',va='bottom',fontsize=15.5)
+    fig.text(.5,.035,'Arrows = directed edges; labels = edge costs; g = stored cost to T.\nThick solid = route; thin dotted = unused; dashed with x = blocked.',ha='center',va='bottom',fontsize=15.5)
     save(fig,'fig_4_7_replanning')
     return {'before':before,'closed':{k:v if math.isfinite(v) else 'infinity' for k,v in after.items()},'reopened':before}
 

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-08T16:13:02.624375</dc:date>
+    <dc:date>2026-10-08T17:47:06.825660</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 15.2904 73.947927 15.2904 76.260305
 L 15.2904 164.708771 
 Q 15.2904 167.021149 23.85744 167.021149 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #1261a0; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #111111; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 23.85744 284.374342 
@@ -53,7 +53,7 @@ Q 15.2904 191.30112 15.2904 193.613498
 L 15.2904 282.061964 
 Q 15.2904 284.374342 23.85744 284.374342 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #1261a0; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #111111; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 23.85744 401.727535 
@@ -66,7 +66,7 @@ Q 15.2904 308.654313 15.2904 310.966691
 L 15.2904 399.415156 
 Q 15.2904 401.727535 23.85744 401.727535 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #1261a0; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #111111; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 23.85744 519.080727 
@@ -79,7 +79,7 @@ Q 15.2904 426.007505 15.2904 428.319884
 L 15.2904 516.768349 
 Q 15.2904 519.080727 23.85744 519.080727 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #1261a0; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #111111; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 238.03344 167.021149 
@@ -92,7 +92,7 @@ Q 229.4664 73.947927 229.4664 76.260305
 L 229.4664 164.708771 
 Q 229.4664 167.021149 238.03344 167.021149 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #19734a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #555555; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 238.03344 284.374342 
@@ -105,7 +105,7 @@ Q 229.4664 191.30112 229.4664 193.613498
 L 229.4664 282.061964 
 Q 229.4664 284.374342 238.03344 284.374342 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #19734a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #555555; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 238.03344 401.727535 
@@ -118,7 +118,7 @@ Q 229.4664 308.654313 229.4664 310.966691
 L 229.4664 399.415156 
 Q 229.4664 401.727535 238.03344 401.727535 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #19734a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #555555; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 238.03344 519.080727 
@@ -131,7 +131,7 @@ Q 229.4664 426.007505 229.4664 428.319884
 L 229.4664 516.768349 
 Q 229.4664 519.080727 238.03344 519.080727 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #19734a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #555555; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_10">
     <path d="M 452.20944 167.021149 
@@ -144,7 +144,7 @@ Q 443.6424 73.947927 443.6424 76.260305
 L 443.6424 164.708771 
 Q 443.6424 167.021149 452.20944 167.021149 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #c95621; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #333333; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_11">
     <path d="M 452.20944 284.374342 
@@ -157,7 +157,7 @@ Q 443.6424 191.30112 443.6424 193.613498
 L 443.6424 282.061964 
 Q 443.6424 284.374342 452.20944 284.374342 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #c95621; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #333333; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_12">
     <path d="M 452.20944 401.727535 
@@ -170,7 +170,7 @@ Q 443.6424 308.654313 443.6424 310.966691
 L 443.6424 399.415156 
 Q 443.6424 401.727535 452.20944 401.727535 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #c95621; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #333333; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_13">
     <path d="M 452.20944 519.080727 
@@ -183,7 +183,7 @@ Q 443.6424 426.007505 443.6424 428.319884
 L 443.6424 516.768349 
 Q 443.6424 519.080727 452.20944 519.080727 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #f8fafc; stroke: #c95621; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #fafafa; stroke: #333333; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_14">
     <path d="M 44.20416 640.480582 
@@ -196,14 +196,14 @@ Q 39.92064 603.482531 39.92064 604.63872
 L 39.92064 639.324393 
 Q 39.92064 640.480582 44.20416 640.480582 
 z
-" clip-path="url(#p1cc2b22e5e)" style="fill: #edf2f6; stroke: #222b34; stroke-linejoin: miter"/>
+" clip-path="url(#pd5538209ec)" style="fill: #f1f1f1; stroke: #202020; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'; fill: #1261a0" transform="translate(82.642125 33.303663)">SEARCH</text>
-    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'; fill: #1261a0" transform="translate(52.626305 50.521993)">AND SAMPLING</text>
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(82.642125 33.303663)">SEARCH</text>
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(52.626305 50.521993)">AND SAMPLING</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="117.024" y="92.954218" transform="rotate(-0 117.024 92.954218)">1959 / 1968</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="117.024" y="92.954218" transform="rotate(-0 117.024 92.954218)">1959 / 1968</text>
    </g>
    <g id="text_3">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="117.024" y="119.798876" transform="rotate(-0 117.024 119.798876)">Dijkstra / A*</text>
@@ -215,14 +215,14 @@ z
    <g id="patch_15">
     <path d="M 117.024 171.336252 
 Q 117.024 178.004482 117.024 182.99566 
-" style="fill: none; stroke: #1261a0; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 120.424 176.19566 
 L 117.024 182.99566 
 L 113.624 176.19566 
-" style="fill: none; stroke: #1261a0; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_5">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="117.024" y="210.307411" transform="rotate(-0 117.024 210.307411)">1996 / 1998</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="117.024" y="210.307411" transform="rotate(-0 117.024 210.307411)">1996 / 1998</text>
    </g>
    <g id="text_6">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="117.024" y="238.732069" transform="rotate(-0 117.024 238.732069)">PRM / RRT</text>
@@ -234,14 +234,14 @@ L 113.624 176.19566
    <g id="patch_16">
     <path d="M 117.024 288.689445 
 Q 117.024 295.357675 117.024 300.348853 
-" style="fill: none; stroke: #1261a0; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 120.424 293.548853 
 L 117.024 300.348853 
 L 113.624 293.548853 
-" style="fill: none; stroke: #1261a0; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_8">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="117.024" y="327.660604" transform="rotate(-0 117.024 327.660604)">2002 / 2010–2011</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="117.024" y="327.660604" transform="rotate(-0 117.024 327.660604)">2002 / 2010–2011</text>
    </g>
    <g id="text_9">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="117.024" y="356.086496" transform="rotate(-0 117.024 356.086496)">D* Lite / Theta* / JPS</text>
@@ -253,14 +253,14 @@ L 113.624 293.548853
    <g id="patch_17">
     <path d="M 117.024 406.042638 
 Q 117.024 412.710867 117.024 417.702046 
-" style="fill: none; stroke: #1261a0; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 120.424 410.902046 
 L 117.024 417.702046 
 L 113.624 410.902046 
-" style="fill: none; stroke: #1261a0; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_11">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #1261a0" x="117.024" y="445.006586" transform="rotate(-0 117.024 445.006586)">2011</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="117.024" y="445.006586" transform="rotate(-0 117.024 445.006586)">2011</text>
    </g>
    <g id="text_12">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="117.024" y="473.558189" transform="rotate(-0 117.024 473.558189)">RRT*</text>
@@ -270,24 +270,24 @@ L 113.624 410.902046
     <text style="font-size: 15.1px; font-family: 'Times New Roman'" transform="translate(75.294914 510.011538)">samples grow</text>
    </g>
    <g id="text_14">
-    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'; fill: #1261a0" transform="translate(103.549 557.377481)">§4.2</text>
-    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'; fill: #1261a0" transform="translate(76.525609 573.447923)">Find a route</text>
+    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'" transform="translate(103.549 557.377481)">§4.2</text>
+    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'" transform="translate(76.525609 573.447923)">Find a route</text>
    </g>
    <g id="patch_18">
     <path d="M 119.007716 575.969585 
 Q 224.111473 588.45201 327.549883 600.736654 
-" style="fill: none; stroke: #1261a0; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 321.198313 596.55843 
 L 327.549883 600.736654 
 L 320.396361 603.310975 
-" style="fill: none; stroke: #1261a0; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #111111; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_15">
-    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'; fill: #19734a" transform="translate(274.798359 33.308336)">TRAJECTORY</text>
-    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'; fill: #19734a" transform="translate(268.093945 50.51732)">OPTIMIZATION</text>
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(274.798359 33.308336)">TRAJECTORY</text>
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(268.093945 50.51732)">OPTIMIZATION</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #19734a" x="331.2" y="92.947007" transform="rotate(-0 331.2 92.947007)">2011</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="331.2" y="92.947007" transform="rotate(-0 331.2 92.947007)">2011</text>
    </g>
    <g id="text_17">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="331.2" y="119.813688" transform="rotate(-0 331.2 119.813688)">Minimum snap</text>
@@ -299,14 +299,14 @@ L 320.396361 603.310975
    <g id="patch_19">
     <path d="M 331.2 171.336252 
 Q 331.2 178.004482 331.2 182.99566 
-" style="fill: none; stroke: #19734a; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #555555; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 334.6 176.19566 
 L 331.2 182.99566 
 L 327.8 176.19566 
-" style="fill: none; stroke: #19734a; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #555555; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_19">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #19734a" x="331.2" y="210.3002" transform="rotate(-0 331.2 210.3002)">2019</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="331.2" y="210.3002" transform="rotate(-0 331.2 210.3002)">2019</text>
    </g>
    <g id="text_20">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="331.2" y="238.624678" transform="rotate(-0 331.2 238.624678)">Fast-Planner</text>
@@ -318,14 +318,14 @@ L 327.8 176.19566
    <g id="patch_20">
     <path d="M 331.2 288.689445 
 Q 331.2 295.357675 331.2 300.348853 
-" style="fill: none; stroke: #19734a; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #555555; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 334.6 293.548853 
 L 331.2 300.348853 
 L 327.8 293.548853 
-" style="fill: none; stroke: #19734a; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #555555; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_22">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #19734a" x="331.2" y="327.660604" transform="rotate(-0 331.2 327.660604)">2021 / 2022</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="331.2" y="327.660604" transform="rotate(-0 331.2 327.660604)">2021 / 2022</text>
    </g>
    <g id="text_23">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="331.2" y="356.086496" transform="rotate(-0 331.2 356.086496)">MINCO / GCOPTER</text>
@@ -337,14 +337,14 @@ L 327.8 293.548853
    <g id="patch_21">
     <path d="M 331.2 406.042638 
 Q 331.2 412.710867 331.2 417.702046 
-" style="fill: none; stroke: #19734a; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #555555; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 334.6 410.902046 
 L 331.2 417.702046 
 L 327.8 410.902046 
-" style="fill: none; stroke: #19734a; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #555555; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_25">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #19734a" x="331.2" y="445.006586" transform="rotate(-0 331.2 445.006586)">2022</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="331.2" y="445.006586" transform="rotate(-0 331.2 445.006586)">2022</text>
    </g>
    <g id="text_26">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="331.2" y="473.439689" transform="rotate(-0 331.2 473.439689)">EGO-Planner-v2</text>
@@ -354,24 +354,24 @@ L 327.8 410.902046
     <text style="font-size: 15.1px; font-family: 'Times New Roman'" transform="translate(304.155664 511.536874)">in clutter</text>
    </g>
    <g id="text_28">
-    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'; fill: #19734a" transform="translate(304.25 557.377481)">§4.3–4.4</text>
-    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'; fill: #19734a" transform="translate(269.172891 573.447923)">Fly and coordinate</text>
+    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'" transform="translate(304.25 557.377481)">§4.3–4.4</text>
+    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'" transform="translate(269.172891 573.447923)">Fly and coordinate</text>
    </g>
    <g id="patch_22">
     <path d="M 331.2 577.736718 
 Q 331.2 588.453681 331.2 597.493594 
-" style="fill: none; stroke: #19734a; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #555555; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 334.6 590.693594 
 L 331.2 597.493594 
 L 327.8 590.693594 
-" style="fill: none; stroke: #19734a; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #555555; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_29">
-    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'; fill: #c95621" transform="translate(500.909789 33.313009)">LEARNING</text>
-    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'; fill: #c95621" transform="translate(476.385375 50.521993)">AND SEMANTICS</text>
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(500.909789 33.313009)">LEARNING</text>
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Times New Roman'" transform="translate(476.385375 50.521993)">AND SEMANTICS</text>
    </g>
    <g id="text_30">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #c95621" x="545.376" y="92.954218" transform="rotate(-0 545.376 92.954218)">2011 / 2017</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="545.376" y="92.954218" transform="rotate(-0 545.376 92.954218)">2011 / 2017</text>
    </g>
    <g id="text_31">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="545.376" y="119.793938" transform="rotate(-0 545.376 119.793938)">DAgger / PPO</text>
@@ -383,14 +383,14 @@ L 327.8 590.693594
    <g id="patch_23">
     <path d="M 545.376 171.336252 
 Q 545.376 178.004482 545.376 182.99566 
-" style="fill: none; stroke: #c95621; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #333333; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 548.776 176.19566 
 L 545.376 182.99566 
 L 541.976 176.19566 
-" style="fill: none; stroke: #c95621; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #333333; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_33">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #c95621" x="545.376" y="210.307411" transform="rotate(-0 545.376 210.307411)">2021 / 2023</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="545.376" y="210.307411" transform="rotate(-0 545.376 210.307411)">2021 / 2023</text>
    </g>
    <g id="text_34">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="545.376" y="237.152069" transform="rotate(-0 545.376 237.152069)">Agile flight / Swift</text>
@@ -402,14 +402,14 @@ L 541.976 176.19566
    <g id="patch_24">
     <path d="M 545.376 288.689445 
 Q 545.376 295.357675 545.376 300.348853 
-" style="fill: none; stroke: #c95621; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #333333; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 548.776 293.548853 
 L 545.376 300.348853 
 L 541.976 293.548853 
-" style="fill: none; stroke: #c95621; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #333333; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_36">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #c95621" x="545.376" y="327.653393" transform="rotate(-0 545.376 327.653393)">2024</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="545.376" y="327.653393" transform="rotate(-0 545.376 327.653393)">2024</text>
    </g>
    <g id="text_37">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="545.376" y="354.515136" transform="rotate(-0 545.376 354.515136)">OpenVLA</text>
@@ -421,14 +421,14 @@ L 541.976 293.548853
    <g id="patch_25">
     <path d="M 545.376 406.042638 
 Q 545.376 412.710867 545.376 417.702046 
-" style="fill: none; stroke: #c95621; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #333333; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 548.776 410.902046 
 L 545.376 417.702046 
 L 541.976 410.902046 
-" style="fill: none; stroke: #c95621; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #333333; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_39">
-    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle; fill: #c95621" x="545.376" y="445.013796" transform="rotate(-0 545.376 445.013796)">2025 / 2026</text>
+    <text style="font-size: 14.2px; font-family: 'Times New Roman'; text-anchor: middle" x="545.376" y="445.013796" transform="rotate(-0 545.376 445.013796)">2025 / 2026</text>
    </g>
    <g id="text_40">
     <text style="font-weight: 700; font-size: 15.8px; font-family: 'Times New Roman'; text-anchor: middle" x="545.376" y="471.853517" transform="rotate(-0 545.376 471.853517)">OpenFly</text>
@@ -438,29 +438,29 @@ L 541.976 410.902046
     <text style="font-size: 15.1px; font-family: 'Times New Roman'" transform="translate(484.366102 510.011538)">language navigation</text>
    </g>
    <g id="text_42">
-    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'; fill: #c95621" transform="translate(531.901 557.377481)">§4.5</text>
-    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'; fill: #c95621" transform="translate(479.644469 573.447923)">Learn and interpret</text>
+    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'" transform="translate(531.901 557.377481)">§4.5</text>
+    <text style="font-weight: 700; font-size: 15.4px; font-family: 'Times New Roman'" transform="translate(479.644469 573.447923)">Learn and interpret</text>
    </g>
    <g id="patch_26">
     <path d="M 543.392284 575.969585 
 Q 438.288527 588.45201 334.850117 600.736654 
-" style="fill: none; stroke: #c95621; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #333333; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 342.003639 603.310975 
 L 334.850117 600.736654 
 L 341.201687 596.55843 
-" style="fill: none; stroke: #c95621; stroke-width: 1.5; stroke-linecap: round"/>
+" style="fill: none; stroke: #333333; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="text_43">
     <text style="font-weight: 700; font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="331.2" y="625.903676" transform="rotate(-0 331.2 625.903676)">HYBRID SYSTEM: propose → check → execute</text>
    </g>
    <g id="text_44">
-    <text style="font-size: 14.5px; font-family: 'Times New Roman'" transform="translate(91.042617 663.782594)">Legend: blue = search/sampling; green = trajectories; orange = learning/semantics.</text>
-    <text style="font-size: 14.5px; font-family: 'Times New Roman'" transform="translate(119.587227 679.15401)">Read columns downward; selected milestones, not a common time scale.</text>
+    <text style="font-size: 14.5px; font-family: 'Times New Roman'" transform="translate(105.566406 663.775797)">Legend: columns = planning families; arrows = progression and combination.</text>
+    <text style="font-size: 14.5px; font-family: 'Times New Roman'" transform="translate(119.587227 679.147213)">Read columns downward; selected milestones, not a common time scale.</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p1cc2b22e5e">
+  <clipPath id="pd5538209ec">
    <rect x="9.936" y="13.248" width="642.528" height="635.904"/>
   </clipPath>
  </defs>

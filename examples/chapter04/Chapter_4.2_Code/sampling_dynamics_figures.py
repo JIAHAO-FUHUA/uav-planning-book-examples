@@ -9,12 +9,12 @@ from figure_support import configure_fonts, save
 from sampling_dynamics import propagate, Scene, CONTROLS, primitive_status
 
 ROOT=Path(__file__).resolve().parent
-BLUE='#1764a5'; GREEN='#167344'; RED='#b33030'; AMBER='#aa6c00'; GRAY='#b6bec5'
+BLUE='#111111'; GREEN='#444444'; RED='#222222'; AMBER='#333333'; GRAY='#AAAAAA'
 
-def map_axes(ax,scene):
+def map_axes(ax,scene,obstacle_fill='#303030'):
     ax.set(xlim=(0,scene['width']),ylim=(0,scene['height']),aspect='equal')
     for x0,x1,y0,y1 in scene['obstacles']:
-        ax.add_patch(Rectangle((x0,y0),x1-x0,y1-y0,fc='#303030',ec='#303030',zorder=3))
+        ax.add_patch(Rectangle((x0,y0),x1-x0,y1-y0,fc=obstacle_fill,ec='#303030',zorder=3))
     ax.set_xlabel(r'$x$ (m)',fontsize=16);ax.set_ylabel(r'$y$ (m)',fontsize=16)
     ax.tick_params(labelsize=14);ax.grid(alpha=.12)
 
@@ -54,7 +54,7 @@ def rewiring():
     d=lambda a,b:math.dist(pts[a],pts[b])
     gn=d('S','N');old=6+d('B','N');new=gn+d('N','B')
     fig,axes=plt.subplots(1,3,figsize=(10.1,4.5))
-    fig.subplots_adjust(left=.018,right=.995,top=.78,bottom=.26,wspace=.1)
+    fig.subplots_adjust(left=.018,right=.995,top=.78,bottom=.34,wspace=.1)
     def edge(ax,a,b,color=GRAY,style='-',width=1.7):
         ax.annotate('',xy=pts[b],xytext=pts[a],arrowprops={'arrowstyle':'-|>',
             'color':color,'lw':width,'linestyle':style,'shrinkA':9,'shrinkB':9})
@@ -66,7 +66,7 @@ def rewiring():
         edge(ax,'S','A');edge(ax,'A','B',GRAY,'--' if i==2 else '-')
         ax.text(-.42,1.45,'3',fontsize=16);ax.text(1.45,3.2,'3',fontsize=16)
         if i==0:
-            edge(ax,'B','N',AMBER)
+            edge(ax,'B','N',AMBER,':')
             ax.text(2.88,1.95,f'{d("B","N"):.3f}',fontsize=15)
             title='1 Nearest is only a candidate'
             note='Nearest node: B; old '+r'$g(\mathrm{B})=6$'+'\nVia B: '+rf'$g(\mathrm{{N}})=7.931$'
@@ -76,7 +76,7 @@ def rewiring():
             title='2 Select the cheaper parent'
             note='Compare free local connections\nChoose S: '+rf'$g(\mathrm{{N}})={gn:.3f}$'
         else:
-            edge(ax,'S','N',GREEN,width=2.3);edge(ax,'N','B',GREEN,width=2.3)
+            edge(ax,'S','N',GREEN,'-.',width=2.3);edge(ax,'N','B',GREEN,'-.',width=2.3)
             ax.text(2.83,1.95,f'{d("N","B"):.3f}',fontsize=15,color=GREEN)
             title='3 Rewire B through N'
             note='New '+r'$g(\mathrm{B})=g(\mathrm{N})+1.931$'+'\n'+rf'$\approx {new:.3f}<6$'+'; remove A to B'
@@ -84,9 +84,9 @@ def rewiring():
         ax.text(.5,-.015,note,transform=ax.transAxes,ha='center',va='top',fontsize=16,linespacing=1.3)
     fig.text(.5,.95,'Local radius = 3; all drawn connections are collision-free',ha='center',fontsize=17)
     fig.legend(handles=[Line2D([],[],c=GRAY,lw=1.7,label='Existing edge'),
-        Line2D([],[],c=AMBER,lw=1.7,label='Candidate'),Line2D([],[],c=BLUE,lw=2,label='Chosen parent'),
-        Line2D([],[],c=GREEN,lw=2,label='Rewired route'),Line2D([],[],c=GRAY,ls='--',label='Removed edge')],
-        loc='lower center',bbox_to_anchor=(.5,.005),ncol=5,frameon=False,fontsize=13.5)
+        Line2D([],[],c=AMBER,lw=1.7,ls=':',label='Candidate'),Line2D([],[],c=BLUE,lw=2,label='Chosen parent'),
+        Line2D([],[],c=GREEN,lw=2,ls='-.',label='Rewired route'),Line2D([],[],c=GRAY,ls='--',label='Removed edge')],
+        loc='lower center',bbox_to_anchor=(.5,.005),ncol=3,frameon=False,fontsize=16)
     save(fig,'fig_4_9_rewiring')
     return {'local_radius':3,'g_N_via_B':old,'g_N_via_S':gn,'g_B_rewired':new}
 
@@ -103,13 +103,14 @@ def primitive_fan(report):
     ax.text(2,.15,'Different velocities lead to different\nreachable successors in the next second.',
             ha='center',fontsize=16,linespacing=1.25)
     ax.set_title('(a) Position alone is insufficient',fontsize=18,fontweight='bold',pad=17)
-    ax=axes[1];scene={'width':6,'height':5,'obstacles':[(3.3,4.6,1.7,2.3)]};map_axes(ax,scene)
+    ax=axes[1];scene={'width':6,'height':5,'obstacles':[(3.3,4.6,1.7,2.3)]};map_axes(ax,scene,obstacle_fill='#D0D0D0')
     state=(2,2,2,0);times=np.linspace(0,1,100)
     style={'legal':(BLUE,'-',2.5),'collision':(RED,'--',1.7),'speed':(AMBER,':',2.2)}
     for item in report['fan']:
         u=item['u'];path=np.array([propagate(state,u,t) for t in times]);color,ls,lw=style[item['status']]
         ax.plot(path[:,0],path[:,1],c=color,ls=ls,lw=lw,zorder=4)
-        ax.plot(*path[-1,:2],'o',c=color,ms=5,zorder=5)
+        marker={'legal':'o','collision':'x','speed':'s'}[item['status']]
+        ax.plot(*path[-1,:2],marker,c=color,ms=5,zorder=5)
         if item['status']=='legal':
             destination=(4.15,3.3 if u[1]>0 else .7)
             ax.annotate(r'$\mathbf{u}=(-1,'+('1' if u[1]>0 else '-1')+')$',
@@ -121,12 +122,12 @@ def primitive_fan(report):
     ax.set_title('(b) Propagate 9 acceleration choices',fontsize=18,fontweight='bold',pad=17)
     fig.text(.5,.935,r'$u_x,u_y\in\{-1,0,1\}$ m/s$^2$; speed limit = 2.5 m/s; acceleration limit = 1.5 m/s$^2$',
              ha='center',fontsize=17)
-    fig.legend(handles=[Line2D([],[],c=BLUE,lw=2.5,label='Legal (2)'),
-        Line2D([],[],c=RED,ls='--',lw=1.7,label='Collision (4)'),
-        Line2D([],[],c=AMBER,ls=':',lw=2.2,label='Speed violation (3)'),
-        Rectangle((0,0),1,1,fc='#303030',label='Inflated obstacle')],
+    fig.legend(handles=[Line2D([],[],c=BLUE,lw=2.5,marker='o',label='Legal (2)'),
+        Line2D([],[],c=RED,ls='--',lw=1.7,marker='x',label='Collision (4)'),
+        Line2D([],[],c=AMBER,ls=':',lw=2.2,marker='s',label='Speed violation (3)'),
+        Rectangle((0,0),1,1,fc='#D0D0D0',ec='black',label='Inflated obstacle')],
         loc='lower center',bbox_to_anchor=(.5,.095),ncol=4,frameon=False,fontsize=15)
-    fig.text(.5,.015,'Black arrow = initial velocity; dots = primitive endpoints. Speed is checked first.',
+    fig.text(.5,.015,'Arrow = initial velocity; markers = primitive endpoints. Speed is checked first.',
              ha='center',fontsize=15.5)
     save(fig,'fig_4_10_primitives')
 
