@@ -1,104 +1,111 @@
-"""Editable mechanism figures for Sections 4.2.3 and 4.2.4.
-
-Run after visual_chapter_figures.py to obtain the revised publication figures.
-Core simulation algorithms and recorded benchmark inputs remain unchanged.
-"""
+"""Editable grayscale mechanism figures; toy graph costs are checked independently."""
 from pathlib import Path
-import json, math, heapq
+import heapq,json,math
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle
+from matplotlib.patches import Circle,Rectangle
 from matplotlib.lines import Line2D
-from figure_support import configure_fonts, save
-
+from figure_support import configure_fonts,save
 configure_fonts()
 ROOT=Path(__file__).resolve().parent
-BLUE='#111111'; ORANGE='#333333'; GREEN='#555555'; GRAY='#888888'; DARK='#202020'
-plt.rcParams.update({'font.size':17,'axes.titlesize':18,'svg.fonttype':'none'})
+plt.rcParams.update({'font.size':18,'svg.fonttype':'none'})
+BLACK='#111111';GRAY='#888888'
 
-def arrow(ax,a,b,color=DARK,ls='-',lw=2.2):
-    ax.annotate('',xy=b,xytext=a,arrowprops={'arrowstyle':'->','color':color,'lw':lw,'linestyle':ls,'shrinkA':24,'shrinkB':24,'mutation_scale':18})
+def arrow(ax,a,b,ls='-',lw=2.3,color=BLACK,shrink=12):
+    ax.annotate('',xy=b,xytext=a,arrowprops={'arrowstyle':'->','color':color,'lw':lw,'linestyle':ls,'shrinkA':shrink,'shrinkB':shrink,'mutation_scale':15})
+
+def grid(ax,blocked=()):
+    ax.set(xlim=(-.6,3.6),ylim=(-.6,2.6),aspect='equal');ax.axis('off')
+    for x in range(4):
+        for y in range(3):ax.add_patch(Rectangle((x-.5,y-.5),1,1,fc='#444444' if (x,y) in blocked else 'white',ec='#BBBBBB',lw=.65))
+
+def local_cost(start,goal,blocked=()):
+    blocked=set(blocked);q=[(0.,start)];d={start:0.}
+    while q:
+        cost,u=heapq.heappop(q)
+        if cost!=d[u]:continue
+        if u==goal:return cost
+        for dx in (-1,0,1):
+            for dy in (-1,0,1):
+                v=(u[0]+dx,u[1]+dy)
+                if (dx,dy)==(0,0) or not(0<=v[0]<=3 and 0<=v[1]<=2) or v in blocked:continue
+                if dx and dy and ((u[0]+dx,u[1]) in blocked or (u[0],u[1]+dy) in blocked):continue
+                candidate=cost+math.hypot(dx,dy)
+                if candidate<d.get(v,math.inf):d[v]=candidate;heapq.heappush(q,(candidate,v))
+    return math.inf
 
 def improvements():
-    fig=plt.figure(figsize=(10.5,6.9))
-    fig.suptitle('Selection and connection rules',fontsize=23,fontweight='bold',y=.985)
-    ax=fig.add_axes([.04,.65,.92,.24]);ax.set(xlim=(0,10),ylim=(0,3));ax.axis('off')
-    ax.text(0,2.6,'(a) Weighted A*: change priority, keep relaxation',fontweight='bold',fontsize=19)
-    labels=[('Candidate a','g = 2,  h = 4',1.4),('Candidate b','g = 5,  h = 2',4.7)]
-    for name,cost,x in labels:
-        ax.text(x,1.9,name,ha='center',fontsize=19)
-        ax.text(x,1.22,cost,ha='center')
-    ax.text(7.5,1.85,'w = 1:  f(a) = 6 < 7  →  choose a',ha='center',fontsize=16.5,color=BLUE)
-    ax.text(7.5,.95,'w = 2:  f(a) = 10 > 9  →  choose b',ha='center',fontsize=16.5,color=ORANGE)
-    gs=fig.add_gridspec(1,2,left=.07,right=.96,bottom=.18,top=.58,wspace=.30)
-    for i,title in enumerate(['(b) Shortcut after search','(c) Theta*: relax through the parent']):
-        ax=fig.add_subplot(gs[0,i]);ax.set(xlim=(-.4,2.6),ylim=(-.5,2.8),aspect='equal');ax.axis('off')
-        a=(0,0);u=(0,2);v=(2,2)
-        ax.set_title(title,pad=12,fontweight='bold',fontsize=17.5)
-        ax.plot([0,0,2],[0,2,2],color=GRAY,lw=3,ls='--')
-        ax.plot([0,2],[0,2],color=BLUE,lw=3)
-        for pos,label,offset in [(a,'a',(-.16,-.23)),(u,'u',(-.17,.20)),(v,'v',(.13,.13))]:
-            ax.scatter(*pos,s=140,c=DARK,zorder=4)
-            ax.text(pos[0]+offset[0],pos[1]+offset[1],label,fontsize=22,fontstyle='italic',ha='center')
-        ax.text(-.18,1,'2',ha='right',color=GRAY)
-        ax.text(1,2.18,'2',ha='center',color=GRAY)
-        ax.text(1.30,.90,'2.828',ha='center',color=BLUE,rotation=45)
-        if i==0:
-            ax.text(1,-.47,'Free a–v: delete u\nLength 4 → 2.828',ha='center',va='top',fontsize=17,color=BLUE)
-        else:
-            ax.text(1,-.47,'a = parent(u), g(a) = 1\nVia u: 5; via a: 3.828 → parent(v) = a',ha='center',va='top',fontsize=16.3,color=BLUE)
-    fig.legend(handles=[Line2D([0],[0],color=GRAY,lw=2,ls='--',label='Existing / ordinary connection'),Line2D([0],[0],color=BLUE,lw=3,label='Checked direct connection')],loc='lower center',bbox_to_anchor=(.5,.015),ncol=2,frameon=False,fontsize=16)
+    fig=plt.figure(figsize=(10.5,7.65));fig.suptitle('Four ways to change a grid search',fontsize=23,weight='bold',y=.988)
+    ax=fig.add_axes([.035,.64,.43,.24]);ax.axis('off');ax.set_title('(a) Weighted A*: change priority',fontsize=19,weight='bold',pad=17)
+    for y,line in [(.83,'a: g = 2, h = 4     b: g = 5, h = 2'),(.56,'w = 1:  f(a) = 6 < 7  →  choose a'),(.29,'w = 2:  f(a) = 10 > 9  →  choose b')]:ax.text(.5,y,line,ha='center',fontsize=17)
+    ax.text(.5,-.02,'Relaxation is unchanged.',ha='center',fontsize=17)
+    fig.text(.755,.913,'(b) JPS: remove symmetric work',ha='center',fontsize=19,weight='bold')
+    left=fig.add_axes([.52,.657,.215,.21]);grid(left)
+    for route,style in [([(0,0),(1,0),(2,0),(3,1)],'-'), ([(0,0),(1,1),(2,1),(3,1)],'--')]:left.plot(*zip(*route),color=BLACK,lw=2.5,ls=style)
+    left.plot([0,3],[0,1],'o',color='black',ms=5);left.text(.05,.22,'A',ha='center',fontsize=17);left.text(3,.12,'B',ha='center',fontsize=17)
+    left.set_title('Equal-cost move orders',fontsize=15,pad=4)
+    right=fig.add_axes([.765,.657,.215,.21]);grid(right,{(1,2)})
+    arrow(right,(1,1),(2,1),shrink=5);arrow(right,(2,1),(2,2),shrink=5);arrow(right,(2,1),(3,1),ls=':',color=GRAY,shrink=5)
+    right.plot([1,2],[1,2],ls='--',c=GRAY,lw=1.5);right.plot(1.48,1.48,'x',c='black',ms=8,mew=1.5)
+    for (x,y),label,marker in [((1,1),'p','o'),((2,1),'x','s'),((2,2),'n','o')]:right.plot(x,y,marker,ms=7,c='black');right.text(x+.12,y-.36,label,fontsize=17)
+    right.set_title('Blocked bypass: retain n',fontsize=15,pad=4)
+    fig.text(.627,.625,'Both costs = 2 + √2',ha='center',fontsize=16);fig.text(.875,.625,'x is a jump point.',ha='center',fontsize=16)
+    fig.text(.752,.585,'8-neighbor grid; no corner cutting.\nScan cells; queue jump points.',ha='center',va='top',fontsize=16,linespacing=1.25)
+    for i,title in enumerate(['(c) Shortcut after search','(d) Theta*: relax through the parent']):
+        ax=fig.add_axes([.07+i*.48,.17,.40,.27]);ax.set(xlim=(-.6,2.6),ylim=(-.5,2.8),aspect='equal');ax.axis('off');ax.set_title(title,fontsize=18,weight='bold',pad=13)
+        ax.plot([0,0,2],[0,2,2],color=GRAY,lw=2.8,ls='--');ax.plot([0,2],[0,2],color=BLACK,lw=2.8)
+        for (x,y),label,offset in [((0,0),'a',(-.16,-.23)),((0,2),'u',(-.17,.20)),((2,2),'v',(.13,.13))]:ax.plot(x,y,'o',ms=8,c='black');ax.text(x+offset[0],y+offset[1],label,fontsize=21,fontstyle='italic',ha='center')
+        ax.text(-.2,1,'2',ha='right',fontsize=18);ax.text(1,2.18,'2',ha='center',fontsize=18);ax.text(1.32,.86,'2.828',rotation=45,ha='center',fontsize=17,bbox={'facecolor':'white','edgecolor':'none','pad':.3})
+        note='Free a–v: delete u\nLength 4 → 2.828' if i==0 else 'a = parent(u), g(a) = 1\nVia u: 5; via a: 3.828 → parent(v) = a'
+        ax.text(1,-.49,note,ha='center',va='top',fontsize=16.5,linespacing=1.3)
+    fig.legend(handles=[Line2D([],[],c=BLACK,lw=2.5,label='Selected / direct connection'),Line2D([],[],c=GRAY,lw=2,ls='--',label='Alternative / previous connection'),Line2D([],[],c=BLACK,marker='s',ls='',label='Jump point')],loc='lower center',bbox_to_anchor=(.5,.012),ncol=3,frameon=False,fontsize=15)
     save(fig,'fig_4_6_method_comparison')
+    assert abs(local_cost((0,0),(3,1))-(2+math.sqrt(2)))<1e-12
+    assert abs(local_cost((1,1),(2,2),{(1,2)})-2)<1e-12
+    assert local_cost((1,1),(2,2),{(1,2),(2,1)})>2
+    return {'equal_move_order_cost':2+math.sqrt(2),'forced_neighbor_cost_via_x':2,'corner_cutting':False}
 
 def shortest_to_goal(blocked=False):
-    # Independently solve the small directed graph, backward from T.
-    edges=[('S','u',1),('u','T',math.inf if blocked else 2),('S','v',2),('v','T',4)]
-    incoming={x:[] for x in ['S','u','v','T']}
+    edges=[('S','u',1),('u','T',math.inf if blocked else 2),('S','v',2),('v','T',4)];incoming={x:[] for x in ['S','u','v','T']}
     for a,b,c in edges:incoming[b].append((a,c))
     d={x:math.inf for x in incoming};d['T']=0;q=[(0,'T')]
     while q:
-        g,u=heapq.heappop(q)
-        if g!=d[u]:continue
+        cost,u=heapq.heappop(q)
+        if cost!=d[u]:continue
         for v,c in incoming[u]:
-            if g+c<d[v]:d[v]=g+c;heapq.heappush(q,(d[v],v))
+            if cost+c<d[v]:d[v]=cost+c;heapq.heappush(q,(d[v],v))
     return d
 
 def repair():
-    before=shortest_to_goal(False);after=shortest_to_goal(True)
-    assert before=={'S':3,'u':2,'v':4,'T':0}
-    assert after=={'S':6,'u':math.inf,'v':4,'T':0}
-    fig,axs=plt.subplots(1,2,figsize=(10.5,6.6))
-    fig.subplots_adjust(left=.03,right=.97,bottom=.37,top=.83,wspace=.10)
-    fig.suptitle('D* Lite: invalidate old costs, then repair',fontsize=22,fontweight='bold',y=.99)
+    before=shortest_to_goal();closed=shortest_to_goal(True)
+    assert before=={'S':3,'u':2,'v':4,'T':0} and closed=={'S':6,'u':math.inf,'v':4,'T':0}
+    g=dict(before);rhs=dict(before);rhs['u']=math.inf;stages=[{'g':dict(g),'rhs':dict(rhs)}]
+    assert g['u']<rhs['u'];g['u']=math.inf;rhs['S']=min(1+g['u'],2+g['v']);stages.append({'g':dict(g),'rhs':dict(rhs)})
+    assert g['S']<rhs['S'];g['S']=math.inf;assert g['S']>rhs['S'];g['S']=rhs['S'];stages.append({'g':dict(g),'rhs':dict(rhs)});assert g==closed
+    fig,axs=plt.subplots(1,3,figsize=(10.5,5.4));fig.subplots_adjust(left=.025,right=.975,bottom=.45,top=.84,wspace=.16)
+    fig.suptitle('D* Lite: follow a cost change back to the start',fontsize=22,weight='bold',y=.985)
     coords={'S':(0,0),'u':(2,1.5),'v':(2,-1.5),'T':(4,0)}
-    edges=[('S','u',1),('u','T',2),('S','v',2),('v','T',4)]
-    for i,(ax,d,title) in enumerate(zip(axs,[before,after],['(a) Before: route cost 3','(b) Close u–T: route cost 6'])):
-        ax.set(xlim=(-.6,4.6),ylim=(-2.0,2.0),aspect='equal');ax.axis('off');ax.set_title(title,fontweight='bold',fontsize=18,pad=9)
-        active={('S','u'),('u','T')} if i==0 else {('S','v'),('v','T')}
-        for a,b,c in edges:
-            pa,pb=coords[a],coords[b]
-            blocked=i==1 and (a,b)==('u','T')
-            color=ORANGE if blocked else (BLUE if (a,b) in active else GRAY)
-            arrow(ax,pa,pb,color,ls='--' if blocked else ('-' if (a,b) in active else ':'),lw=3 if (a,b) in active else 1.8)
-            x,y=((pa[0]+pb[0])/2,(pa[1]+pb[1])/2)
-            if blocked:ax.plot(x,y,'x',color='black',ms=9,mew=2,zorder=6)
-            ax.text(x,y+(.18 if y>0 else -.30),'∞' if blocked else str(c),ha='center',color=color,fontsize=21)
-        for n,p in coords.items():
-            ax.add_patch(Circle(p,.29,fc='white',ec=DARK,lw=1.7,zorder=4))
-            ax.text(*p,n,ha='center',va='center',fontsize=22,fontstyle='italic' if n in ['u','v'] else 'normal',zorder=5)
-            value='∞' if not math.isfinite(d[n]) else str(d[n])
-            ax.text(p[0],p[1]+(.44 if n in ['u','S','T'] else -.45),'g = '+value,ha='center',va='center',fontsize=17)
-    fig.text(.5,.33,'Close: u has g = 2 < rhs = ∞  →  invalidate; S changes from 3 to 6.\nReopen: u has g = ∞ > rhs = 2  →  accept 2; S changes from 6 to 3.',ha='center',va='top',fontsize=17,linespacing=1.5)
-    for x,text,color in [(.18,'g = rhs\nConsistent: no queue entry',DARK),(.5,'g > rhs\nCheaper: set g ← rhs',BLUE),(.82,'g < rhs\nObsolete: set g ← ∞, recompute',ORANGE)]:
-        fig.text(x,.16,text,ha='center',va='center',fontsize=16.5,color=color,linespacing=1.4)
-    fig.text(.5,.035,'Arrows = directed edges; labels = edge costs; g = stored cost to T.\nThick solid = route; thin dotted = unused; dashed with x = blocked.',ha='center',va='bottom',fontsize=15.5)
+    for i,(ax,stage,title) in enumerate(zip(axs,stages,['1 Detect a stale value','2 Invalidate u; update S','3 Accept the new route'])):
+        ax.set(xlim=(-.6,4.6),ylim=(-2,2.15),aspect='equal');ax.axis('off');ax.set_title(title,weight='bold',fontsize=16,pad=13)
+        for a,b,c in [('S','u',1),('u','T',math.inf),('S','v',2),('v','T',4)]:
+            blocked=(a,b)==('u','T');selected=i==2 and (a,b) in {('S','v'),('v','T')};arrow(ax,coords[a],coords[b],ls='--' if blocked else ('-' if selected else ':'),lw=2.8 if selected else 1.6,color=BLACK if blocked or selected else GRAY,shrink=13)
+            x=(coords[a][0]+coords[b][0])/2;y=(coords[a][1]+coords[b][1])/2
+            if blocked:ax.plot(x,y,'x',c='black',ms=8,mew=1.7)
+            ax.text(x,y+(.25 if y>0 else -.31),'∞' if blocked else str(c),ha='center',fontsize=19)
+        for name,(x,y) in coords.items():ax.add_patch(Circle((x,y),.29,fc='white',ec=BLACK,lw=1.4,zorder=4));ax.text(x,y,name,ha='center',va='center',fontsize=21,zorder=5)
+        def f(v):return '∞' if not math.isfinite(v) else str(v)
+        ax.text(.5,-.09,'u: g / rhs = '+f(stage['g']['u'])+' / '+f(stage['rhs']['u'])+'\nS: g / rhs = '+f(stage['g']['S'])+' / '+f(stage['rhs']['S']),transform=ax.transAxes,ha='center',va='top',fontsize=17,linespacing=1.3)
+    fig.text(.5,.235,'At S: 3 → ∞ → 6. Reopening u–T reverses the repair: u = 2, then S = 3.',ha='center',fontsize=17)
+    fig.text(.5,.157,'g = rhs: keep     g > rhs: accept rhs     g < rhs: invalidate, then recompute',ha='center',fontsize=16.5)
+    fig.text(.5,.085,'Unchanged values: g(T) = 0 and g(v) = 4. A predecessor has an edge into the updated node.',ha='center',fontsize=15.5)
+    fig.text(.5,.025,'Legend: arrows = directed edges; labels = costs; dashed with × = blocked; thick solid = new route.',ha='center',fontsize=15.5)
     save(fig,'fig_4_7_replanning')
-    return {'before':before,'closed':{k:v if math.isfinite(v) else 'infinity' for k,v in after.items()},'reopened':before}
+    return {'before':before,'closed':{k:v if math.isfinite(v) else 'infinity' for k,v in closed.items()},'reopened':before,'trace':[{kind:{k:v if math.isfinite(v) else 'infinity' for k,v in values.items()} for kind,values in s.items()} for s in stages]}
 
 def main():
-    improvements();values=repair()
-    (ROOT/'results'/'algorithm_illustrations.json').write_text(json.dumps({'weighted_candidates':{'a':{'g':2,'h':4},'b':{'g':5,'h':2}},'shortcut_length':math.sqrt(8),'theta_candidate_cost':1+math.sqrt(8),'directed_repair':values},indent=2),encoding='utf-8')
-    print('Created revised Figures 4.6–4.7; illustrative costs verified independently.')
+    jps=improvements();trace=repair();report={'weighted_candidates':{'a':{'g':2,'h':4},'b':{'g':5,'h':2}},'shortcut_length':math.sqrt(8),'theta_candidate_cost':1+math.sqrt(8),'directed_repair':trace,'jps_illustration':jps}
+    (ROOT/'results'/'algorithm_illustrations.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+    print('Figures4.6–4.7 regenerated; symmetry, corner rule and numerical repair trace verified.')
 
 if __name__=='__main__':main()

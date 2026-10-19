@@ -67,3 +67,8 @@ understandable without color. Labels use Times New Roman and stay in English in
 both book editions; editable SVGs and Python plotting sources are retained.
 `print_style.py` applies the final grayscale export. Figure 4.3 keeps its horizontal
 layout and published-source attribution; external source frames are not distributed in this repository.
+
+
+## Teaching diagrams updated on 19 October 2026
+
+Figure 4.6 explains JPS path symmetry and a forced neighbor when corner cutting is forbidden. Figure 4.7 follows a directed-edge closure through g/rhs invalidation and predecessor repair, using a zero heuristic. The generator checks the illustrated local costs and records them in results/algorithm_illustrations.json. JPS remains a conceptual explanation; this repository does not include a full JPS implementation. Core Python/C++ algorithms and existing experiment results are unchanged. Sources and modeling assumptions are in SOURCES_TEACHING_REVISION.md.

@@ -29,6 +29,55 @@
       "u": 2,
       "v": 4,
       "T": 0
-    }
+    },
+    "trace": [
+      {
+        "g": {
+          "S": 3,
+          "u": 2,
+          "v": 4,
+          "T": 0
+        },
+        "rhs": {
+          "S": 3,
+          "u": "infinity",
+          "v": 4,
+          "T": 0
+        }
+      },
+      {
+        "g": {
+          "S": 3,
+          "u": "infinity",
+          "v": 4,
+          "T": 0
+        },
+        "rhs": {
+          "S": 6,
+          "u": "infinity",
+          "v": 4,
+          "T": 0
+        }
+      },
+      {
+        "g": {
+          "S": 6,
+          "u": "infinity",
+          "v": 4,
+          "T": 0
+        },
+        "rhs": {
+          "S": 6,
+          "u": "infinity",
+          "v": 4,
+          "T": 0
+        }
+      }
+    ]
+  },
+  "jps_illustration": {
+    "equal_move_order_cost": 3.414213562373095,
+    "forced_neighbor_cost_via_x": 2,
+    "corner_cutting": false
   }
 }
