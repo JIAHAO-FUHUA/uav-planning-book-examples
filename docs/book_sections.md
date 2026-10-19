@@ -14,7 +14,8 @@ Paths are relative to `examples/chapter04/`.
 | 4.2.8 | 3D RRT/RRT* with whole-segment box checks | `Chapter_4.2_Code/simulations.py`, `run_simulations.py` |
 | 4.3.1 | Timed paths, derivative limits and time dilation | `Chapter_4.3_Code/trajectory_generation.py`, `algorithm_figures.py` |
 | 4.3.2 | Polynomial interpolation and fixed-time minimum snap | `Chapter_4.3_Code/trajectory_generation.py`, `run_trajectory.py` |
+| 4.3.4 | MINCO s=4 banded reconstruction and adjoint gradients | `Chapter_4.3_Code/minco.py`, `minco.cpp`, `run_minco.py` |
 
-The three core Section 4.2 modules and the Section 4.3 solver have corresponding
+The three core Section 4.2 modules and both Section 4.3 solvers have corresponding
 C++17 programs. JPS has a conceptual description in the book but no implementation
 in this repository. System cases and learning methods belong to later additions.

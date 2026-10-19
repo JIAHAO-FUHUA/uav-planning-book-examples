@@ -12,7 +12,9 @@ add_executable(sampling_dynamics "${GRID_DIR}/sampling_dynamics.cpp")
 add_executable(simulations "${GRID_DIR}/simulations.cpp")
 add_executable(trajectory_generation "${TRAJECTORY_DIR}/trajectory_generation.cpp")
 
-foreach(target grid_planning sampling_dynamics simulations trajectory_generation)
+add_executable(minco_demo "${TRAJECTORY_DIR}/minco.cpp")
+
+foreach(target grid_planning sampling_dynamics simulations trajectory_generation minco_demo)
   # Keep assert-based self-tests active in Release builds as well.
   if(MSVC)
     target_compile_options(${target} PRIVATE /UNDEBUG)

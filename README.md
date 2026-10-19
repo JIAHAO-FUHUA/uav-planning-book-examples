@@ -5,7 +5,7 @@
 For the IET book maintainer: [Chapter 4 integration and update commands](docs/integration.md).
 
 Python and C++ examples accompanying the UAV planning chapter. The first set covers
-Sections **4.2.1–4.2.8** and **4.3.1–4.3.2**, including grid search, incremental
+Sections **4.2.1–4.2.8** and **4.3.1–4.3.2, 4.3.4**, including grid search, incremental
 replanning, sampling, motion primitives and polynomial trajectories.
 
 ## Choose an example
@@ -16,6 +16,7 @@ replanning, sampling, motion primitives and polynomial trajectories.
 | 4.2.5–4.2.6 | PRM, RRT, RRT*, kinodynamic A* | `Chapter_4.2_Code/run_sampling.py` | `sampling_dynamics.cpp` |
 | 4.2.7–4.2.8 | Moving-agent replanning and 3D sampling | `Chapter_4.2_Code/run_simulations.py` | `simulations.cpp` |
 | 4.3.1–4.3.2 | Polynomial interpolation and minimum snap | `Chapter_4.3_Code/run_trajectory.py` | `trajectory_generation.cpp` |
+| 4.3.4 | MINCO banded coefficients and adjoint gradients | `Chapter_4.3_Code/run_minco.py` | `minco.cpp` |
 
 All paths in this table are relative to `examples/chapter04/`. The chapter's JPS
 discussion currently has no executable implementation. See [section mapping](docs/book_sections.md).
@@ -70,8 +71,8 @@ cmake --build build --config Release --parallel
 ctest --test-dir build -C Release --output-on-failure
 ```
 
-Four executables are built: `grid_planning`, `sampling_dynamics`, `simulations`,
-and `trajectory_generation`. With Visual Studio they are under `build/Release/`;
+Five executables are built: `grid_planning`, `sampling_dynamics`, `simulations`,
+`trajectory_generation`, and `minco_demo`. With Visual Studio they are under `build/Release/`;
 with a single-configuration generator they are under `build/`. The programs also
 support `--self-test`; see the chapter folders for direct compiler commands.
 

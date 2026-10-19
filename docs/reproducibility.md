@@ -9,8 +9,8 @@ and an optional-media check in the figure driver.
 
 - Recorded Python environment: Python 3.12.14, NumPy 2.5.3, Matplotlib 3.11.2.
 - Root `requirements.txt` pins the numerical and plotting packages; use Python 3.12+.
-- C++ programs require C++17. CMake builds all four and CTest runs their self-tests.
-- `python tools/run_checks.py` runs four existing Python check programs. Assertions
+- C++ programs require C++17. CMake builds all five and CTest runs their self-tests.
+- `python tools/run_checks.py` runs five Python check programs. Assertions
   must remain enabled; do not use `python -O`.
 - Figure generation requires an installed Times New Roman font. Fonts are not
   bundled; PNG and SVG assets are provided.
@@ -45,3 +45,8 @@ Keep complete Python drivers synchronized with the book's appendices. When a cas
 changes, rerun its checks, record its scene and seed, then regenerate its figures.
 Preserve English figure text, legends and editable SVG files. New chapters can be
 added under `examples/chapterXX/` without changing the current examples' paths.
+
+
+## MINCO addition
+
+Section 4.3.4 added on 19 October 2026 includes fixed-band s=4 coefficient reconstruction and adjoint gradients in Python/C++17. It reproduces the preceding KKT minimum-snap curve under the same data and assumptions. Python also demonstrates time-only BFGS in log durations. The new checks cover KKT equivalence, C6 continuity, nonzero boundary states and finite-difference gradients. No-pivot LU requires moderate scaling; no obstacle or full-vehicle feasibility is established. See the chapter SOURCES_MINCO.md for pinned upstream provenance.

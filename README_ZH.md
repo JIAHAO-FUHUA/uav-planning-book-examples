@@ -5,7 +5,7 @@
 总仓库维护者请看：[第 4 章接入与更新命令](docs/integration.md)。
 
 本仓库按书籍章节组织 Python 与 C++ 样例。目前包含 **4.2.1–4.2.8** 和
-**4.3.1–4.3.2**：栅格搜索、增量重规划、采样规划、动力学搜索及多项式轨迹生成。
+**4.3.1–4.3.2、4.3.4**：栅格搜索、增量重规划、采样规划、动力学搜索及多项式轨迹生成。
 
 ## 先运行一个例子
 
@@ -31,6 +31,7 @@ Linux/macOS 使用 `python3 -m venv .venv` 创建环境，后续解释器改为
 | 4.2.5–4.2.6 | PRM、RRT、RRT*、动力学 A* | `Chapter_4.2_Code/run_sampling.py` |
 | 4.2.7–4.2.8 | 行进中的地图更新、三维采样 | `Chapter_4.2_Code/run_simulations.py` |
 | 4.3.1–4.3.2 | 多项式插值与最小 snap | `Chapter_4.3_Code/run_trajectory.py` |
+| 4.3.4 | MINCO带状系数求解与伴随梯度 | `Chapter_4.3_Code/run_minco.py` |
 
 每个目录均提供对应的 C++17 实现、英文实验图、可编辑 SVG、数值结果及检查程序。
 目前 JPS 只有书中原理介绍，尚无实现。详见[章节与文件对应表](docs/book_sections.md)。
@@ -46,7 +47,7 @@ ctest --test-dir build -C Release --output-on-failure
 ```
 
 生成 `grid_planning`、`sampling_dynamics`、`simulations` 和
-`trajectory_generation` 四个程序。Visual Studio 的可执行文件在
+`trajectory_generation`、`minco_demo` 五个程序。Visual Studio 的可执行文件在
 `build/Release/`，单配置生成器的文件在 `build/`。GitHub Actions
 会在 Windows 和 Linux 上运行已有的 Python 检查与 C++ 自检。
 
