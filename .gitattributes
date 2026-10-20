@@ -8,3 +8,5 @@
 *.svg text eol=lf
 *.txt text eol=lf
 *.png binary
+*.sh text eol=lf
+*.launch text eol=lf

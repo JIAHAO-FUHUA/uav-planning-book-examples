@@ -5,7 +5,7 @@
 For the IET book maintainer: [Chapter 4 integration and update commands](docs/integration.md).
 
 Python and C++ examples accompanying the UAV planning chapter. The first set covers
-Sections **4.2.1–4.2.8** and **4.3.1–4.3.2, 4.3.4–4.3.6**, including grid search, incremental
+Sections **4.2.1–4.2.8** and **4.3.1–4.3.2, 4.3.4–4.3.9**, including grid search, incremental
 replanning, sampling, motion primitives and polynomial trajectories.
 
 ## Choose an example
@@ -18,6 +18,7 @@ replanning, sampling, motion primitives and polynomial trajectories.
 | 4.3.1–4.3.2 | Polynomial interpolation and minimum snap | `Chapter_4.3_Code/run_trajectory.py` | `trajectory_generation.cpp` |
 | 4.3.4 | MINCO banded coefficients and adjoint gradients | `Chapter_4.3_Code/run_minco.py` | `minco.cpp` |
 | 4.3.5–4.3.6 | Distance constraints and scheduled handoff | `Chapter_4.3_Code/maps_replanning.py` | `maps_replanning.cpp` |
+| 4.3.7–4.3.9 | Fast-Planner / EGO-Planner-v2 ROS cases and failure diagnosis | `Chapter_4.3_Code/ros_cases/README.md` | Pinned upstream catkin workspaces |
 
 All paths in this table are relative to `examples/chapter04/`. The chapter's JPS
 discussion currently has no executable implementation. See [section mapping](docs/book_sections.md).
@@ -47,7 +48,7 @@ python3 -m venv .venv
 
 The grid, sampling and replanning algorithms themselves use the Python standard
 library. Polynomial optimization needs NumPy; figure generation needs Matplotlib.
-These examples run without ROS or a separate flight simulator.
+The numerical examples and offline replay checks run without ROS. The new system cases require a separate Ubuntu 20.04 / Noetic / Python 3.8 environment; see [ROS case instructions](examples/chapter04/Chapter_4.3_Code/ros_cases/README.md).
 
 ## Figures and recorded results
 
@@ -85,9 +86,7 @@ Linux for each push and pull request.
 The cases use fixed scene geometry, parameters and seeds. They demonstrate the
 specified geometric or reduced translational models. See
 [reproduction details](docs/reproducibility.md) for result interpretation and
-[external projects](docs/external_projects.md) for later EGO-Planner-v2,
-EGO-Swarm, Fast-Planner and learning cases. Those integrations will be added as
-their book sections are completed and their environments are verified.
+[external projects](docs/external_projects.md) for the verified Fast-Planner / EGO-Planner-v2 scope and the pending EGO-Swarm / learning cases. The frozen Fast-Planner run reaches the goal but is rejected for altitude and command continuity; the EGO-v2 replay fails a revised clearance rule. These are diagnosis cases, not accepted physical flights or a planner ranking.
 
 Figures are designed for **black and white printing**. Line styles, point markers
 and hatching carry meaning, so the examples remain readable without color.

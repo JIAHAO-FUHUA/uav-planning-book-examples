@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="756pt" height="352.8pt" viewBox="0 0 756 352.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-20T20:44:23.749471</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 352.8 
+L 756 352.8 
+L 756 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 173.572 234.154667 
+L 237.598667 234.154667 
+L 237.598667 131.712 
+L 173.572 131.712 
+z
+" clip-path="url(#pfaf1af0c25)" style="fill: #a6a6a6; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 45.518667 186.134667 
+L 340.041333 186.134667 
+" clip-path="url(#pfaf1af0c25)" style="fill: none; stroke-dasharray: 2,3.3; stroke-dashoffset: 0; stroke: #000000; stroke-width: 2"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 45.518667 186.134667 
+L 135.156 186.134667 
+L 160.766667 106.101333 
+L 263.209333 106.101333 
+L 340.041333 186.134667 
+" clip-path="url(#pfaf1af0c25)" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.8"/>
+   </g>
+   <g id="line2d_3">
+    <defs>
+     <path id="m4ca4cf5259" d="M -4 4 
+L 4 -4 
+M -4 -4 
+L 4 4 
+" style="stroke: #000000; stroke-width: 2"/>
+    </defs>
+    <g clip-path="url(#pfaf1af0c25)">
+     <use xlink:href="#m4ca4cf5259" x="202.384" y="186.134667" style="stroke: #000000; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="line2d_4">
+    <defs>
+     <path id="m5f0fa9180b" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #000000"/>
+    </defs>
+    <g clip-path="url(#pfaf1af0c25)">
+     <use xlink:href="#m5f0fa9180b" x="202.384" y="131.712" style="stroke: #000000"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 202.384 129.712925 
+Q 202.384 110.902474 202.384 93.880877 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 199.384 99.880877 
+L 202.384 93.880877 
+L 205.384 99.880877 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 15px; font-family: 'Times New Roman'; text-anchor: start" x="215.189333" y="99.698667" transform="rotate(-0 215.189333 99.698667)">Escape direction</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 15px; font-family: 'Times New Roman'; text-anchor: start" x="48.72" y="218.148" transform="rotate(-0 48.72 218.148)">Colliding curve point</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 15px; font-family: 'Times New Roman'; text-anchor: start" x="67.928" y="90.094667" transform="rotate(-0 67.928 90.094667)">A* detour</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_4">
+    <path d="M 405.783 105.76944 
+L 735.777 105.76944 
+L 735.777 68.30208 
+L 405.783 68.30208 
+z
+" clip-path="url(#p1e4c1294ee)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 405.783 155.72592 
+L 735.777 155.72592 
+L 735.777 118.25856 
+L 405.783 118.25856 
+z
+" clip-path="url(#p1e4c1294ee)" style="fill: #e0e0e0; stroke: #000000; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 405.783 205.6824 
+L 735.777 205.6824 
+L 735.777 168.21504 
+L 405.783 168.21504 
+z
+" clip-path="url(#p1e4c1294ee)" style="fill: #e0e0e0; stroke: #000000; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 405.783 255.63888 
+L 735.777 255.63888 
+L 735.777 218.17152 
+L 405.783 218.17152 
+z
+" clip-path="url(#p1e4c1294ee)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="570.78" y="91.103475" transform="rotate(-0 570.78 91.103475)">Positions + positive durations</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 570.78 107.766602 
+Q 570.78 112.01231 570.78 114.469164 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 573.78 108.469164 
+L 570.78 114.469164 
+L 567.78 108.469164 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="570.78" y="141.059955" transform="rotate(-0 570.78 141.059955)">MINCO quintic reconstruction</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 570.78 157.723082 
+Q 570.78 161.96879 570.78 164.425644 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 573.78 158.425644 
+L 570.78 164.425644 
+L 567.78 158.425644 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="570.78" y="191.016435" transform="rotate(-0 570.78 191.016435)">Jerk / time / obstacle / limit costs</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 570.78 207.679562 
+Q 570.78 211.92527 570.78 214.382124 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 573.78 208.382124 
+L 570.78 214.382124 
+L 567.78 208.382124 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 17px; font-family: 'Times New Roman'; text-anchor: middle" x="570.78" y="240.972915" transform="rotate(-0 570.78 240.972915)">L-BFGS update; check and restart</text>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 700; font-size: 21px; font-family: 'Times New Roman'; text-anchor: middle" x="378" y="21.290062" transform="rotate(-0 378 21.290062)">EGO-Planner-v2: build a local escape direction where the curve collides</text>
+  </g>
+  <g id="legend_1">
+   <g id="patch_11">
+    <path d="M 90.23875 326.594516 
+L 118.23875 326.594516 
+L 118.23875 316.794516 
+L 90.23875 316.794516 
+z
+" style="fill: #a6a6a6; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 14px; font-family: 'Times New Roman'; text-anchor: start" x="129.43875" y="326.594516" transform="rotate(-0 129.43875 326.594516)">Inflated obstacle</text>
+   </g>
+   <g id="line2d_5">
+    <path d="M 250.341875 321.694516 
+L 264.341875 321.694516 
+L 278.341875 321.694516 
+" style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 14px; font-family: 'Times New Roman'; text-anchor: start" x="289.541875" y="326.594516" transform="rotate(-0 289.541875 326.594516)">Colliding seed</text>
+   </g>
+   <g id="line2d_6">
+    <path d="M 398.81625 321.694516 
+L 412.81625 321.694516 
+L 426.81625 321.694516 
+" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 14px; font-family: 'Times New Roman'; text-anchor: start" x="438.01625" y="326.594516" transform="rotate(-0 438.01625 326.594516)">Free guide path</text>
+   </g>
+   <g id="line2d_7">
+    <defs>
+     <path id="m7cf370f9ae" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #000000"/>
+    </defs>
+    <g>
+     <use xlink:href="#m7cf370f9ae" x="567.100625" y="321.694516" style="stroke: #000000"/>
+    </g>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 14px; font-family: 'Times New Roman'; text-anchor: start" x="592.300625" y="326.594516" transform="rotate(-0 592.300625 326.594516)">Local anchor</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfaf1af0c25">
+   <rect x="32.713333" y="74.088" width="320.133333" height="172.872"/>
+  </clipPath>
+  <clipPath id="p1e4c1294ee">
+   <rect x="400.68" y="59.976" width="340.2" height="208.152"/>
+  </clipPath>
+ </defs>
+</svg>

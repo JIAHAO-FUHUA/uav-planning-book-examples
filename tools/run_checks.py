@@ -11,6 +11,7 @@ CHECKS = (
     ('Chapter_4.3_Code', 'test_trajectory_generation.py'),
     ('Chapter_4.3_Code', 'test_minco.py'),
     ('Chapter_4.3_Code', 'test_maps_replanning.py'),
+    ('Chapter_4.3_Code', 'test_system_cases.py'),
 )
 
 def main():
@@ -20,7 +21,7 @@ def main():
         directory = ROOT / 'examples' / 'chapter04' / folder
         print(f'Running {folder}/{name}', flush=True)
         subprocess.run([sys.executable, name], cwd=directory, check=True)
-    print('All six Python check programs passed.', flush=True)
+    print('All seven Python check programs passed.', flush=True)
 
 if __name__ == '__main__':
     main()

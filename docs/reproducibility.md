@@ -10,7 +10,7 @@ and an optional-media check in the figure driver.
 - Recorded Python environment: Python 3.12.14, NumPy 2.5.3, Matplotlib 3.11.2.
 - Root `requirements.txt` pins the numerical and plotting packages; use Python 3.12+.
 - C++ programs require C++17. CMake builds all six and CTest runs their self-tests.
-- `python tools/run_checks.py` runs six Python check programs. Assertions
+- `python tools/run_checks.py` runs seven Python check programs. Assertions
   must remain enabled; do not use `python -O`.
 - Figure generation requires an installed Times New Roman font. Fonts are not
   bundled; PNG and SVG assets are provided.
@@ -55,3 +55,23 @@ Section 4.3.4 added on 19 October 2026 includes fixed-band s=4 coefficient recon
 ## Map and handoff addition
 
 Sections 4.3.5--4.3.6 added on 20 October 2026: analytic disk queries, squared-hinge gradients, interval clearance and a scheduled C3 MINCO handoff. The C++ companion covers queries/admission logic. Finite differences additionally check obstacle-cost gradients through the MINCO adjoint. Status inputs are illustrative; no grid ESDF, controller or ROS/real-time execution is reproduced. See SOURCES_MAPS_REPLANNING.md for source commits and assumptions.
+
+
+## ROS system cases (20 October 2026)
+
+Sections 4.3.7–4.3.9 use pinned official Fast-Planner and EGO-Planner-v2 source.
+Both workspaces compiled and both planner/server graphs ran in WSL2 Ubuntu20.04
+and ROS Noetic with native Python3.8. The common bridge is ideal command tracking
+with static unoccluded range clouds, not a dynamics/controller simulation.
+The portable setup recipe passed an idempotent cached-source rerun. Official
+default GUI launch graphs were inspected, not executed; a clean OS installation
+is not claimed. See the ROS README for prerequisites, isolated environment
+helpers and commands; no upstream planning source is redistributed here.
+
+Frozen evidence deliberately retains observed failures: Fast has a 2.104m
+command position step and −0.009m minimum altitude; EGO-v2 has 0.344m box
+clearance and fails a revised 0.40m requirement. Offline checks must detect these
+rejections. Reported command derivatives do not certify position continuity.
+Distances are computed over the replay polyline, not the original continuous
+curves. The seven-program CI suite validates offline evidence and geometry;
+it does not install ROS, rerun upstream planners or certify flight safety.

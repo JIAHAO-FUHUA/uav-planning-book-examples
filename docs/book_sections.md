@@ -16,7 +16,8 @@ Paths are relative to `examples/chapter04/`.
 | 4.3.2 | Polynomial interpolation and fixed-time minimum snap | `Chapter_4.3_Code/trajectory_generation.py`, `run_trajectory.py` |
 | 4.3.4 | MINCO s=4 banded reconstruction and adjoint gradients | `Chapter_4.3_Code/minco.py`, `minco.cpp`, `run_minco.py` |
 | 4.3.5–4.3.6 | Analytic distance, collision bounds and scheduled handoff | `Chapter_4.3_Code/maps_replanning.py`, `maps_replanning.cpp` |
+| 4.3.7–4.3.9 | Pinned official ROS systems, replay assessment and rejection diagnosis | `Chapter_4.3_Code/ros_cases/README.md`, `system_case_figures.py` |
 
 The three core Section 4.2 modules and both Section 4.3 solvers have corresponding
 C++17 programs. JPS has a conceptual description in the book but no implementation
-in this repository. System cases and learning methods belong to later additions.
+in this repository. Section 4.3.3 remains pending. ROS planner builds use separate upstream catkin workspaces; the root CMake targets remain the six numerical teaching programs. Learning and multi-UAV integrations remain pending.

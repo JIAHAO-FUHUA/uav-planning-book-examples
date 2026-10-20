@@ -1,0 +1,88 @@
+{
+  "checked_date": "2026-10-20",
+  "environment": {
+    "platform": "WSL2 Ubuntu 20.04.6",
+    "ros": "Noetic 1.17.4",
+    "ros_python": "3.8 /usr/bin/python3",
+    "compiler": "GCC 9.4.0",
+    "Eigen": "3.3.7",
+    "Armadillo": "9.8",
+    "NLopt": "2.7.1",
+    "build_type": "Release"
+  },
+  "source": {
+    "nlopt_archive": "https://codeload.github.com/stevengj/nlopt/tar.gz/refs/tags/v2.7.1",
+    "sha256": "db88232fa5cef0ff6e39943fc63ab6074208831dc0031cf1545f6ecd31ae2a1a",
+    "observed_heads": {
+      "HKUST-Aerial-Robotics/Fast-Planner": {
+        "sha": "41be219fe4ecc43bf0e0c2b42a523f8755ccc0bd",
+        "date": "2024-10-24T13:12:43Z"
+      },
+      "ZJU-FAST-Lab/EGO-Planner-v2": {
+        "sha": "9d85475ea7b9bf5c112cf7c3c3d0d3f9e96d9010",
+        "date": "2023-03-17T04:55:21Z"
+      }
+    }
+  },
+  "builds": {
+    "fast": "complete required workspace passed",
+    "ego_v2": "complete required workspace passed",
+    "portable_setup": "idempotent rerun passed against 1909 hash-verified cached source files; clean OS dependency installation not tested"
+  },
+  "execution": {
+    "fast": "official compiled planner and trajectory server ran; goal reached; external altitude and position-step validation REJECTS record",
+    "ego_v2": "official compiled planner and trajectory server ran; goal reached; replay box clearance passes 0.30m and fails revised 0.40m",
+    "official_default_gui_demos": "launch graphs inspected, not executed"
+  },
+  "scope": "ideal command-to-odometry bridge, range-limited static point cloud; no physical dynamics, occlusion, sensing noise, verified free-space carving or statistical benchmark",
+  "metric_definition": "distances on piecewise-linear saved replay; original continuous curves and real vehicle safety not certified",
+  "metrics": {
+    "fast": {
+      "arrived": true,
+      "polyline_length_m": 15.624230564629553,
+      "polyline_minimum_boundary_distance_m": 0.5013149342047115,
+      "recorded_maximum_speed_mps": 1.5248275675533485,
+      "recorded_maximum_acceleration_mps2": 2.6442176735773675,
+      "goal_error_m": 0.0030192864275989267,
+      "trajectory_messages": 16,
+      "stored_points": 808,
+      "largest_recorded_gap_s": 0.02084115700000666,
+      "minimum_recorded_altitude_m": -0.008868800726585576,
+      "largest_recorded_position_step_m": 2.1042638699529856,
+      "position_step_consistency_passes": false,
+      "altitude_0_30_m_passes_replay": false,
+      "margin_0_30_m_passes_replay": true,
+      "margin_0_40_m_passes_replay": true
+    },
+    "ego": {
+      "arrived": true,
+      "polyline_length_m": 15.149557252870348,
+      "polyline_minimum_boundary_distance_m": 0.343691275442295,
+      "recorded_maximum_speed_mps": 1.5073122703511748,
+      "recorded_maximum_acceleration_mps2": 1.3909444905675035,
+      "goal_error_m": 1.0741893290113479e-07,
+      "trajectory_messages": 13,
+      "stored_points": 807,
+      "largest_recorded_gap_s": 0.02113522400003376,
+      "minimum_recorded_altitude_m": 0.9999999916695379,
+      "largest_recorded_position_step_m": 0.030384790671640224,
+      "position_step_consistency_passes": true,
+      "altitude_0_30_m_passes_replay": true,
+      "margin_0_30_m_passes_replay": true,
+      "margin_0_40_m_passes_replay": false
+    }
+  },
+  "hashes": {
+    "results/ros_ego/result.json": "00d19a63ec265c36857c512a7db9670bbcf21022fa491c5765a140850f923550",
+    "results/ros_fast/result.json": "f75cb04c158685d781088a8a0f02f86a20ee1451824cddf46f21fcfba6ed48f5",
+    "ros_cases/assess_cases.py": "1a6bf943d59801fffa1ee48783a575071993158bc8ba257847be268e2d0c51ef",
+    "ros_cases/make_launch.py": "600a7c10fb731cb7b77cc126ba108ab0f1611a65956f649a3bf6a8f928d877c9",
+    "ros_cases/pinned_sources.json": "8b01e44778b0e3783859c20c370a03680238b789820c378cc80b88f57093d8d4",
+    "ros_cases/prepare_sources.py": "ddb68af9940e525c2f8b8d2b272a6defa2ba9a789751ab44e04e946e60804e75",
+    "ros_cases/README.md": "405285b44358dd08acd61c9b6a5c72c3cc606fb11fa34f15c0e197495e36532a",
+    "ros_cases/run_case.py": "0bd2ad68d8eef7b544dce9504e4d74bed3cedda7226cf99e1a3d28f0b8086e00",
+    "ros_cases/scene.json": "e3a856e1d98c068208d84c00d44df5c2632068c7f83e19d893aab61295f2e58e",
+    "ros_cases/setup_ros_cases.sh": "728deed56446cbcb86f10d3ce5967f0df9f36f797feb246eaffcc9913afa9500"
+  },
+  "tests": "test_system_cases.py passed; verifies evidence, geometric replay queries, launch wiring and detection of known rejected conditions"
+}
