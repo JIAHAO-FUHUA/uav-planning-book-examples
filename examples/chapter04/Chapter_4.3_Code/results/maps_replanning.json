@@ -1,0 +1,80 @@
+{
+  "scope": "analytic static 2D slice; no grid-ESDF/ROS/controller reproduction",
+  "occupancy": {
+    "two_hits": "occupied",
+    "three_misses": "free",
+    "unobserved": "unknown"
+  },
+  "penalty": {
+    "point": [
+      1.4,
+      0.0
+    ],
+    "distance": 0.2,
+    "required": 0.3,
+    "cost": 0.009999999999999985,
+    "gradient": [
+      0.19999999999999984,
+      -0.0
+    ]
+  },
+  "sampling": {
+    "endpoints": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ]
+    ],
+    "sample_distances": [
+      1.6,
+      1.6
+    ],
+    "required": 0.3,
+    "sample_only_passes": true,
+    "actual_minimum_distance": -0.4,
+    "interval_test_passes": false
+  },
+  "handoff": {
+    "request_time": 1.0,
+    "switch_time": 1.6,
+    "ready_time": 1.3,
+    "durations": [
+      1.4,
+      3.0
+    ],
+    "waypoints": [
+      [
+        1.6,
+        0.0
+      ],
+      [
+        2.1,
+        1.3
+      ],
+      [
+        5.0,
+        0.0
+      ]
+    ],
+    "derivative_mismatch_0_to_3": 0.0,
+    "minimum_new_obstacle_distance": 0.23916861910054044,
+    "minimum_at_local_time": 0.6921374336550158,
+    "required": 0.2,
+    "on_time": "scheduled",
+    "late": "late",
+    "map_changed": "revalidate-map",
+    "parent_replaced": "stale-parent",
+    "wrong_clock_reset_position_error": 0.3
+  },
+  "stopping": {
+    "speed": 2.0,
+    "latency": 0.2,
+    "deceleration": 2.0,
+    "margin": 0.3,
+    "ideal_required_distance": 1.7
+  }
+}

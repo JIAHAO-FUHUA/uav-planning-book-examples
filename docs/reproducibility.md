@@ -9,8 +9,8 @@ and an optional-media check in the figure driver.
 
 - Recorded Python environment: Python 3.12.14, NumPy 2.5.3, Matplotlib 3.11.2.
 - Root `requirements.txt` pins the numerical and plotting packages; use Python 3.12+.
-- C++ programs require C++17. CMake builds all five and CTest runs their self-tests.
-- `python tools/run_checks.py` runs five Python check programs. Assertions
+- C++ programs require C++17. CMake builds all six and CTest runs their self-tests.
+- `python tools/run_checks.py` runs six Python check programs. Assertions
   must remain enabled; do not use `python -O`.
 - Figure generation requires an installed Times New Roman font. Fonts are not
   bundled; PNG and SVG assets are provided.
@@ -50,3 +50,8 @@ added under `examples/chapterXX/` without changing the current examples' paths.
 ## MINCO addition
 
 Section 4.3.4 added on 19 October 2026 includes fixed-band s=4 coefficient reconstruction and adjoint gradients in Python/C++17. It reproduces the preceding KKT minimum-snap curve under the same data and assumptions. Python also demonstrates time-only BFGS in log durations. The new checks cover KKT equivalence, C6 continuity, nonzero boundary states and finite-difference gradients. No-pivot LU requires moderate scaling; no obstacle or full-vehicle feasibility is established. See the chapter SOURCES_MINCO.md for pinned upstream provenance.
+
+
+## Map and handoff addition
+
+Sections 4.3.5--4.3.6 added on 20 October 2026: analytic disk queries, squared-hinge gradients, interval clearance and a scheduled C3 MINCO handoff. The C++ companion covers queries/admission logic. Finite differences additionally check obstacle-cost gradients through the MINCO adjoint. Status inputs are illustrative; no grid ESDF, controller or ROS/real-time execution is reproduced. See SOURCES_MAPS_REPLANNING.md for source commits and assumptions.

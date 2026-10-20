@@ -1,0 +1,4 @@
+C++ map, gradient, interval and admission checks passed
+PENALTY 0.009999999999999985 0.1999999999999998 -0
+INTERVAL 0
+STATUSES scheduled late revalidate-map stale-parent

@@ -66,3 +66,37 @@ g++ -O2 -std=c++17 minco.cpp -o minco_demo
 ```
 
 Use the configured virtual-environment interpreter. On Windows use .\minco_demo.exe. Python 3.12+ and the existing pinned requirements are sufficient; the standalone C++17 solver has no third-party dependencies. Figures 4.19–4.20 retain editable English Times New Roman SVG/PNG. results/minco_results.json records the input, KKT equivalence and a small time-only BFGS example; the C++ parity output is in results/cpp_minco_summary.txt. The full source is in minco.py and minco.cpp; tests compare the independent KKT solution, nonzero boundary states, C6 continuity, dense reference solves and finite-difference gradients. The educational no-pivot band LU needs moderate scaling. This is not a full GCOPTER ROS reproduction. Assumptions and pinned upstream links are in SOURCES_MINCO.md.
+
+
+## Sections 4.3.5--4.3.6: distance constraints and execution handoff
+
+These small mechanisms connect the preceding trajectory solver to obstacle
+queries and timed execution. They are not an OctoMap/Voxblox or ROS reproduction.
+
+```text
+python maps_replanning.py
+python maps_replanning_figures.py
+python test_maps_replanning.py
+g++ -O2 -std=c++17 maps_replanning.cpp -o maps_replanning
+./maps_replanning --self-test
+```
+
+Use the configured Python interpreter and pinned requirements. On Windows use
+`.\maps_replanning.exe`. C++17 needs no third-party library. The Python program
+writes `results/maps_replanning.json` and generates an s=4 MINCO curve with
+matching position, velocity, acceleration and jerk at a scheduled handoff.
+The C++ counterpart covers occupancy, analytic distance/penalty gradients,
+interval clearance and admission decisions; the existing minco.cpp remains the
+separate C++ coefficient/gradient example. Figures 4.21--4.23 use editable English
+Times New Roman monochrome SVG/PNG and explicit legends.
+
+Checks cover an endpoint-only missed collision, an independently differenced
+distance/penalty gradient, obstacle-cost gradients propagated through the MINCO
+adjoint, whole-polynomial disk clearance, C3 handoff, deadlines, map versions,
+parent trajectory versions and frames. Interval-check failure is inconclusive.
+Its success assumes a valid speed/error bound and known space throughout the
+interval. The admission gate consumes caller-supplied validation; it is not a
+flight safety checker. No sensor stack, controller, dynamics-limit certificate
+or actual asynchronous real-time execution is implemented. See
+SOURCES_MAPS_REPLANNING.md for derivation assumptions and pinned upstream links.
+Section 4.3.3 remains pending in the manuscript.
