@@ -21,6 +21,9 @@ def run():
     xs=np.linspace(0.,4.,41);ds=[c.query([x,1.])[0] for x in xs]
     assert interval_clearance(ds,1.,.1,.3)
     assert not interval_clearance([float('nan')],1.,.1,.3)
+    # Polynomial libraries trim constant axes: add coefficient arrays by degree.
+    separated=generate([[0.,1.],[4.,1.]],[4.])
+    assert abs(circle_minimum(separated,c)[0]-.6)<1e-7
     tr,error=handoff_case();assert error<1e-8
     # Chain a new obstacle cost through the existing MINCO adjoint.
     samples=[(0,.5,.7),(0,.9,1.1),(1,.3,.8)]

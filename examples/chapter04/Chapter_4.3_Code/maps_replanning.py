@@ -88,8 +88,9 @@ def circle_minimum(tr, obstacle):
     best = (math.inf, None)
     for i, c in enumerate(tr.normalized_coefficients()):
         delta = c.copy();delta[0] -= obstacle.center
-        squared = sum((poly.polymul(delta[:, j], delta[:, j]) for j in range(2)),
-                      start=np.zeros(15))
+        squared = np.array([0.])
+        for j in range(2):
+            squared = poly.polyadd(squared,poly.polymul(delta[:,j],delta[:,j]))
         roots = poly.polyroots(poly.polyder(squared))
         points = [0., 1.] + [float(z.real) for z in roots
                              if abs(z.imag) < 1e-7 and 0 < z.real < 1]
